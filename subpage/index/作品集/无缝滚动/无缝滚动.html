@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>无缝滚动</title>
+    <style>
+        *{
+            padding:0;
+            margin:0;
+        }
+        li{
+            list-style:none;
+        }
+        #box{
+            width:930px;
+            height:200px;
+            background:#ccc;
+            margin:100px auto;
+            position:relative;
+            overflow:hidden;
+        }
+        #ul1{
+            width:930px;
+            height:200px;
+            position:absolute;
+            left:0;
+            top:0;
+        }
+        #ul1 li{
+            width:300px;
+            height:200px;
+        }
+    </style>
+    <script src="move.js"></script>
+    <script>
+        window.onload = function(){
+            var oBox = document.getElementById('box');
+            var oUl = document.getElementById('ul1');
+            oUl.innerHTML+=oUl.innerHTML;
+            var aLi = oUl.children;
+            for(var i=0; i<aLi.length; i++){
+                aLi[i].style.position = 'absolute';
+                aLi[i].style.left=i*aLi[i].offsetWidth+i*10+'px';
+            }
+            var w = (aLi[0].offsetWidth*aLi.length+aLi.length*10)/2;
+            var l =0;
+            setInterval(function(){
+                l-=5;
+                if(l<-w){
+                    l=0;
+                }
+                /*move(oUl,{left:l},{easing:'linear'});*/
+                oUl.style.left = l+'px';
+            },30);
+        };
+    </script>
+</head>
+<body>
+    <div id="box">
+        <ul id="ul1">
+            <li><img src="img/1.jpg"/></li>
+            <li><img src="img/2.jpg"/></li>
+            <li><img src="img/3.jpg"/></li>
+            <li><img src="img/4.jpg"/></li>
+            <li><img src="img/5.jpg"/></li>
+            <li><img src="img/6.jpg"/></li>
+            <li><img src="img/7.jpg"/></li>
+        </ul>
+    </div>
+</body>
+</html>

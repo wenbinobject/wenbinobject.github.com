@@ -1,0 +1,105 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>图片环绕</title>
+<style>
+*{margin:0; padding:0; list-style:none;}
+body{background:#000;}
+ul{ width:133px; height:200px; margin:200px auto; position:relative; -webkit-transform-style:preserve-3d; -webkit-transform:perspective(800px) rotateX(0deg) rotateY(0deg);}
+ul li{ position:absolute; top:0; left:0; width:100%; height:100%; border-radius:10px; overflow:hidden; box-shadow:0 0 20px #fff; -webkit-transform:rotateY(0deg) translateZ(0);}
+</style>
+<script>
+window.onload=function(){
+	var oUl = document.querySelector('ul');
+	var aLi = oUl.children;
+	
+	for(var i=0;i<aLi.length;i++){
+		aLi[i].style.WebkitTransition = '1s all ease '+(11-i)*100+'ms';
+		
+		
+		aLi[i].style.WebkitTransform = 'rotateY('+360/11*i+'deg) translateZ(350px)';
+	}
+	
+	//拿数字模拟角度
+	var x = 0; 		//模拟x轴角度
+	var y = 0; 		//模拟y轴角度
+	var iSpeedX = 0;
+	var iSpeedY = 0;
+	var lastX = 0;
+	var lastY = 0;
+	oUl.onmousedown = function(ev){
+		clearInterval(oUl.timer);
+		//y轴
+		var disX = ev.pageX-y;
+		//x轴
+		var disY = ev.pageY-x;
+		document.onmousemove = function(ev){
+			x = ev.pageY-disY;
+			y = ev.pageX-disX;
+			
+			oUl.style.WebkitTransform = 'perspective(800px) rotateX('+-x/5+'deg) rotateY('+y/5+'deg)';
+			
+			iSpeedX = ev.pageX-lastX;
+			iSpeedY = ev.pageY-lastY;
+			lastX = ev.pageX;
+			lastY = ev.pageY;
+		};
+		document.onmouseup = function(){
+			document.onmousemove = null;
+			document.onmouseup = null;
+			
+			oUl.timer = setInterval(function(){
+				iSpeedX*=0.95;
+				iSpeedY*=0.95;
+				
+				
+				x+=iSpeedY;
+				y+=iSpeedX;
+				oUl.style.WebkitTransform = 'perspective(800px) rotateX('+-x/5+'deg) rotateY('+y/5+'deg)';
+				
+				
+				if(Math.abs(iSpeedX)<1)iSpeedX = 0;
+				if(Math.abs(iSpeedY)<1)iSpeedY = 0;
+				if(iSpeedX==0&&iSpeedY==0){
+					clearInterval(oUl.timer);
+				}
+			},30);
+		};
+		return false;
+	};
+};
+</script>
+</head>
+
+<body>
+	<ul>
+		<li><img src="img/1.jpg" /></li>
+		<li><img src="img/2.jpg" /></li>
+		<li><img src="img/3.jpg" /></li>
+		<li><img src="img/4.jpg" /></li>
+		<li><img src="img/5.jpg" /></li>
+		<li><img src="img/6.jpg" /></li>
+		<li><img src="img/7.jpg" /></li>
+		<li><img src="img/8.jpg" /></li>
+		<li><img src="img/9.jpg" /></li>
+		<li><img src="img/10.jpg" /></li>
+		<li><img src="img/11.jpg" /></li>
+	</ul>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

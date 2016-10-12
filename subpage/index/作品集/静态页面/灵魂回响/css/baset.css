@@ -1,0 +1,202 @@
+@charset "utf-8";
+/* CSS Document */
+body{background:#1c1a25;}
+
+/*==========================顶端=======================*/
+.top{width:100%; height:50px; margin:0 auto; background:url(../img/ds.jpg) repeat-x;}
+.top .top-0{width:1000px; height:50px; margin:0 auto; overflow:hidden;}
+.top .top-0 .top-1{width:114px; height:36px; border-right:1px solid #ccc; margin-top:6px; background:url(../img/logo_white.png) no-repeat 4px -5px;}
+.top .top-0 .top-2{width:540px; height:50px;}
+.top .top-0 .top-2 .top-5{ width:75px; heihgt:49px; position:relative;}
+.top .top-0 .top-2 .top-6{ width:75px; heihgt:49px; position:relative;}
+.top .top-0 .top-2 .top-3{width:24px; height:50px; position:absolute; left:0; top:0; background:url(../img/cyou_sprite.png) no-repeat -139px 11px;}
+.top .top-0 .top-2 .top-4{font-size:12px; color:#333; line-height:50px; margin-left:30px;}
+.top .top-0 .top-2 .top-30{width:24px; height:50px; position:absolute; left:0; top:0; background:url(../img/cyou_sprite.png) no-repeat -189px 11px;}
+.top .top-0 .top-2 .top-40{font-size:12px; color:#333; line-height:50px; margin-left:30px;}
+.top .top-0 .top-2 .top-31{width:24px; height:50px; position:absolute; left:0; top:0; background:url(../img/cyou_sprite.png) no-repeat 0px -93px;}
+.top .top-0 .top-2 .top-41{font-size:12px; color:#333; line-height:50px; margin-left:30px;}
+.top .top-0 .top-2 .top-6{border-right:1px solid #ccc;}
+.top .top-0 .top-2 .top-7{width:82px; height:50px; border-right:1px solid #ccc; position:relative;}
+.top .top-0 .top-2 .top-7 p{font-size:12px; color:#333; margin-top:19px; margin-left:29px;}
+.top .top-0 .top-2 .top-7 i{width:11px; height:11px; background:#0CC; position:absolute; left:57px; top:20px; background:url(../img/cyou_sprite.png) no-repeat -205px -144px;}
+.top .top-0 .top-2 .top-8{width:112px; height:50px; border-right:1px solid #ccc; position:relative;}
+.top .top-0 .top-2 .top-8 p{font-size:12px; color:#333; margin-top:19px; margin-left:25px;}
+.top .top-0 .top-2 .top-8 i{width:11px; height:11px; background:#0CC; position:absolute; left:88px; top:20px; background:url(../img/cyou_sprite.png) no-repeat -205px -144px;}
+.top .top-0 .top-2 .top-9{width:112px; height:50px; border-right:1px solid #ccc; position:relative;}
+.top .top-0 .top-2 .top-9 p{font-size:12px; color:#333; margin-top:19px; margin-left:25px;}
+.top .top-0 .top-2 .top-9 i{width:11px; height:11px; background:#0CC; position:absolute; left:88px; top:20px; background:url(../img/cyou_sprite.png) no-repeat -205px -144px;}
+/*=====================================顶部导航========================*/
+.xt{width:1000px; height:5px; margin:0 auto; background:url(../img/xt.jpg) no-repeat;}
+.topnav{width:1000px; height:551px; margin:0 auto; background:url(../img/header_main.jpg) no-repeat; overflow:hidden;}
+.topnav .topnav-0{width:190px; height:100px; background:url(../img/logo.gif) no-repeat;}
+.topnav .topnav-1{width:790px; height:100px;}
+.topnav .topnav-1 .topnav-2{margin-left:27px; margin-top:36px;}
+.topnav .topnav-1 .topnav-2 .topnav-3{font-size:15px; color:#fff; text-align:center;}
+.topnav .topnav-1 .topnav-2 .topnav-4{font-size:12px; color:#fff; text-align:center; opacity:0.5; filter:alpha(opacitu=50);}
+.topnav .topnav-1 .topnav-2 a{color:#fff;}
+.topnav .topnav-5{width:32px; height:122px; background:url(../img/12.jpg) no-repeat; margin-top:245px;}
+.topnav .topnav-5 a{width:32px; height:122px; display:block;}
+/*============================游戏下载=============================*/
+.game{width:1000px; height:110px; margin:0 auto; position:relative;}
+.game .game-1{width:617px; height:110px; position:absolute; left:0; top:0; background:url(../img/sprite.jpg) no-repeat;}
+.game .game-2{width:383px; height:110px; background:#201920; position:relative;}
+.game .game-2 .game-3{width:383px; height:66px; position:absolute; left:12px; top:8px; background:url(../img/sever.png) no-repeat;}
+.game .game-2 .game-3 .game-3-1{font-size:12px; color:#adb9e0; margin-left:88px; margin-top:9px;}
+.game .game-2 .game-3 .game-3-2{font-size:12px; color:#adb9e0; margin-left:88px; margin-top:8px;}
+.game .game-2 .game-3 .game-3-1 span{color:#f00;}
+.game .game-2 .game-3 .game-3-2 span{color:#f00;}
+.game .game-2 .game-4{width:383px; height:45px; background:url(../img/sprite.jpg) no-repeat 0px -217px; margin-top:65px; overflow:hidden; position:relative;}
+.game .game-2 .game-4 .game-5{font-size:12px; color:#adb9e0; margin-left:6px; margin-top:15px;}
+.game .game-2 .game-4 .game-6{width:14px; height:14px; position:absolute; left:156px; top:15px; background:url(../img/sprite.jpg) no-repeat -603px -227px;}
+.game .game-2 .game-4 .game-5 span{color:#f93d1a; text-decoration:underline;}
+/*=========================================================*/
+.content{width:1000px; height:304px; margin:0 auto;}
+.content .content-1{width:617px; height:302px; background:url(../img/main_a1.jpg) no-repeat; border:1px solid #443b4f;}
+.content .content-2{width:381px; height:304px; background:#322e3f;}
+.content .content-1 .content-1-1{width:27px; height:63px; background:url(../img/slider_h_main.png) no-repeat; margin-left:12px; margin-top:11px;}
+.content .content-1 .content-1-2{width:27px; height:63px; background:url(../img/slider_media.png) no-repeat; margin-left:12px; margin-top:10px;}
+.content .content-1 .content-1-3{width:88px; height:16px; background:url(../img/yd.png) no-repeat;margin-left:519px; margin-top:133px;}
+.content .content-2 .content-2-1{width:381px; height:58px; position:relative;}
+.content .content-2 .content-2-1 .content-2-2{width:95px; height:58px; position:absolute; left:0; top:0; background:url(../img/sprite.jpg) 0 -262px no-repeat;
+                                               font-size:12px; color:#fff; text-align:center; line-height:58px; font-weight:bold;}
+.content .content-2 .content-2-1 .content-2-3{width:95px; height:58px; position:absolute; left:95px; top:0; background:url(../img/sprite.jpg) 0 -262px no-repeat;
+                                               font-size:12px; color:#fff; text-align:center; line-height:58px; font-weight:bold;}
+.content .content-2 .content-2-1 .content-2-4{width:95px; height:58px; position:absolute; left:190px; top:0; background:url(../img/sprite.jpg) 0 -262px no-repeat;
+                                               font-size:12px; color:#fff; text-align:center; line-height:58px; font-weight:bold;}
+.content .content-2 .content-2-1 .content-2-5{width:95px; height:58px; position:absolute; left:285px; top:0; background:url(../img/sprite.jpg) 0 -262px no-repeat;
+                                               font-size:12px; color:#fff; text-align:center; line-height:58px; font-weight:bold;}
+.content .content-2 .content-2-1 .content-2-2:hover{background:url(../img/sprite.jpg) -94px -323px no-repeat;}
+.content .content-2 .content-2-1 .content-2-3:hover{background:url(../img/sprite.jpg) -94px -323px no-repeat;}
+.content .content-2 .content-2-1 .content-2-4:hover{background:url(../img/sprite.jpg) -94px -323px no-repeat;}
+.content .content-2 .content-2-1 .content-2-5:hover{background:url(../img/sprite.jpg) -94px -323px no-repeat;}
+.content .content-2 .content-6{width:347px; height:33px; background:url(../img/tf.jpg) no-repeat; margin-top:17px; margin-left:16px;}
+.content .content-2 .content-6 .content-6-0{color:#ff4606; text-align:center; font-size:15px; line-height:33px;}
+.content .content-2 .content-7{width:341px; height:147px; margin-top:12px; margin-left:24px;}
+.content .content-2 .content-7 .content-7z{font-size:13px; color:#9ca7ca;}
+.content .content-2 .content-7 .content-7z li{margin-bottom:10px;}
+.content .content-2 .content-7 .content-7y{font-size:13px; color:#9ca7ca; margin-right:10px;}
+.content .content-2 .content-7 .content-7y li{margin-bottom:10px;}
+.content .content-2 .content-10{color:#9ca7ca; font-size:12px; margin-right:30px;}
+/*===========================222==============================================*/
+.doll{width:1000px; height:194px; margin:0 auto; overflow:hidden;}
+.doll .doll-1{width:242px; height:130px; border:1px solid #433b4f; margin-top:32px;}
+.doll .doll-2{width:242px; height:130px; border:1px solid #433b4f; margin-top:32px; margin-left:8px;}
+.doll .doll-3{width:242px; height:130px; border:1px solid #433b4f; margin-top:32px; margin-left:8px;}
+.doll .doll-4{width:242px; height:130px; border:1px solid #433b4f; margin-top:32px; margin-left:8px;}
+/*-------------------*/
+.dollgame{width:1000px; height:348px; margin:0 auto;}
+.dollgame .dollgame-1{width:654px; height:346px; border:1px solid #433b4f; margin-left:1px;}
+.dollgame .dollgame-2{width:343px; height:349px; position:relative;}
+.dollgame .dollgame-2 .dollgame-2-2{width:29px; height:31px; position:absolute; left:20px; top:0; background:url(../img/sprite.jpg) no-repeat -628px 0;}
+.dollgame .dollgame-2 .dollgame-2-1{font-size:19px; color:#f3ca90; line-height:29px; font-family:'黑体'; margin-left:63px;}
+.dollgame .dollgame-2 .dollgame-2-3{width:319px; height:149px; border:1px solid #433b4f; margin:15px 0 0 20px; background:url(../img/lo.jpg) no-repeat; position:relative;}
+.dollgame .dollgame-2 .dollgame-2-3 .dollgame-2-4{width:319px; height:36px; background:#000; margin-top:113px; opacity:0.5; filter:alpha(opacity=50); position:absolute; legt:0; bottom:0; display:none;}
+.dollgame .dollgame-2 .dollgame-2-3 .dollgame-2-5{font-size:14px; color:#fff; position:absolute; legt:5px; bottom:11px; z-index:1; display:none; margin-left:6px;}
+.dollgame .dollgame-2 .dollgame-2-3:hover .dollgame-2-4{display:block;}
+.dollgame .dollgame-2 .dollgame-2-3:hover .dollgame-2-5{display:block;}
+.dollgame .dollgame-2 .dollgame-2-6{width:322px; height:141px; margin-left:20px; margin-top:11px;}
+.dollgame .dollgame-2 .dollgame-2-6 .dollgame-2-7{width:320px; height:25px; background:#2a2730; border-radius:7px;  margin-bottom:3px;}
+.dollgame .dollgame-2 .dollgame-2-6 .dollgame-2-7 .dollgame-2-8{width:120px; height:25px; border-radius:7px; position:relative;}
+.dollgame .dollgame-2 .dollgame-2-6 .dollgame-2-7 .dollgame-2-8 i{width:8px; height:16px; background:url(../img/sprite.jpg) no-repeat -8px -536px; position:absolute; left:9px; top:9px;}
+.dollgame .dollgame-2 .dollgame-2-6 .dollgame-2-7 .dollgame-2-8 p{font-size:13px; color:#959fc2; line-height:25px; margin-left:27px;}
+.dollgame .dollgame-2 .dollgame-2-6 .dollgame-2-7 .dollgame-2-9{width:55px; height:25px; border-radius:7px; background:#52505e;}
+.dollgame .dollgame-2 .dollgame-2-6 .dollgame-2-7 .dollgame-2-9 p{font-size:13px; color:#959fc2; line-height:25px; margin-left:8px;}
+
+.dollgame .dollgame-1 .dollgame-1-1{width:654px; height:60px; background:#F6C; position:relative;}
+.dollgame .dollgame-1 .dollgame-1-1 .dollgame-1-2{width:109px; height:60px; background:#C63; position:absolute; left:0; top:0; background:url(../img/sprite.jpg) no-repeat -8px -412px; text-align:center; line-height:60px; color:#fff;}
+.dollgame .dollgame-1 .dollgame-1-1 .dollgame-1-3{width:109px; height:60px; background:#C63; position:absolute; left:109px; top:0; background:url(../img/sprite.jpg) no-repeat -8px -412px; text-align:center; line-height:60px; color:#fff;}
+.dollgame .dollgame-1 .dollgame-1-1 .dollgame-1-4{width:109px; height:60px; background:#C63; position:absolute; left:218px; top:0; background:url(../img/sprite.jpg) no-repeat -8px -412px; text-align:center; line-height:60px; color:#fff;}
+.dollgame .dollgame-1 .dollgame-1-1 .dollgame-1-5{width:109px; height:60px; background:#C63; position:absolute; left:327px; top:0; background:url(../img/sprite.jpg) no-repeat -8px -412px; text-align:center; line-height:60px; color:#fff;}
+.dollgame .dollgame-1 .dollgame-1-1 .dollgame-1-6{width:109px; height:60px; background:#C63; position:absolute; left:436px; top:0; background:url(../img/sprite.jpg) no-repeat -8px -412px; text-align:center; line-height:60px; color:#fff;}
+.dollgame .dollgame-1 .dollgame-1-1 .dollgame-1-7{width:109px; height:60px; background:#C63; position:absolute; left:545px; top:0; background:url(../img/sprite.jpg) no-repeat -8px -412px; text-align:center; line-height:60px; color:#fff;}
+.dollgame .dollgame-1 .dollgame-1-1 .dollgame-1-2:hover{background:url(../img/sprite.jpg) no-repeat -8px -473px;}
+.dollgame .dollgame-1 .dollgame-1-1 .dollgame-1-3:hover{background:url(../img/sprite.jpg) no-repeat -8px -473px;}
+.dollgame .dollgame-1 .dollgame-1-1 .dollgame-1-4:hover{background:url(../img/sprite.jpg) no-repeat -8px -473px;}
+.dollgame .dollgame-1 .dollgame-1-1 .dollgame-1-5:hover{background:url(../img/sprite.jpg) no-repeat -8px -473px;}
+.dollgame .dollgame-1 .dollgame-1-1 .dollgame-1-6:hover{background:url(../img/sprite.jpg) no-repeat -8px -473px;}
+.dollgame .dollgame-1 .dollgame-1-1 .dollgame-1-7:hover{background:url(../img/sprite.jpg) no-repeat -8px -473px;}
+.dollgame .dollgame-1  .dollgame-3{width:654px; height:288px; background:url(../img/zs.jpg) no-repeat;}
+/*==================================================快捷入口==============================================*/
+.guild{width:1000px; height:1040px; margin:0 auto; background:url(../img/lk.jpg) no-repeat;}
+.guild .guild-0{width:1000px; height:775px; margin:31px auto;}
+.guild .guild-0 .guild-1{width:216px; height:775px;}
+.guild .guild-0 .guild-1 .guild-1-1{width:215px; height:189px; background:url(../img/11.jpg) no-repeat; margin-left:1px; overflow:hidden;}
+.guild .guild-0 .guild-1 .guild-1-1 .guild-1-2{font-size:15px; color:#f3ca90; font-family:'微软雅黑'; margin:15px 0 0 75px;}
+.guild .guild-0 .guild-1 .guild-1-1 .guild-1-3{width:180px; height:110px; margin:30px 0 0 19px;}
+.guild .guild-0 .guild-1 .guild-1-1 .guild-1-3 li{color:#9587ab; font-size:12px; margin-right:23px; margin-bottom:15px;}
+.guild .guild-0 .guild-1 .guild-1-4{width:216px; height:308px; margin-left:1px; margin-top:24px;}
+.guild .guild-0 .guild-1 .guild-1-5{width:205px; height:36px; margin:-41px 0 0 5px;}
+.guild .guild-0 .guild-1 .guild-1-5 p{color:#a798be; font-size:15px; font-family:'微软雅黑'; margin-left:50px; margin-top:-30px;}
+.guild .guild-0 .guild-1 .guild-1-6{width:216px; height:254px;}
+.guild .guild-0 .guild-2{width:424px; height:775px; margin-left:19px;}
+.guild .guild-0 .guild-2 .guild-2-1{width:424px; height:43px; position:relative; overflow:hidden;}
+.guild .guild-0 .guild-2 .juli{margin-top:38px;}
+.guild .guild-0 .guild-2 .guild-2-1 .guild-2-2{width:48px; height:28px; position:absolute; left:0; top:3px; background:url(../img/sprite.jpg) no-repeat -607px -349px;}
+.guild .guild-0 .guild-2 .guild-2-1 .guild-2-3{font-size:19px; color:#f3ca90; margin-left:50px; margin-top:6px; font-family:'微软雅黑';}
+.guild .guild-0 .guild-2 .guild-2-4{width:424px; height:306px;}
+.guild .guild-0 .guild-2 .guild-2-4 .guild-2-5{width:424px; height:49px;}
+.guild .guild-0 .guild-2 .guild-2-4 .guild-2-5 li{width:103px; height:47px; border:1px solid #433b4f; text-align:center; line-height:47px; color:#a295b7;}
+.guild .guild-0 .guild-2 .guild-2-4 .guild-2-5 li a{width:103px; height:47px; text-align:center; line-height:47px; color:#a295b7; display:block;}
+.guild .guild-0 .guild-2 .guild-2-4 .guild-2-5 li:hover{background:#322b3c;}
+.guild .guild-0 .guild-2 .guild-2-4 .guild-2-5 .guild-2-6{}
+.guild .guild-0 .guild-2 .guild-2-4 .guild-2-5 .guild-2-7{border-left:none;}
+.guild .guild-0 .guild-2 .guild-2-4 .guild-2-5 .guild-2-8{border-left:none;}
+.guild .guild-0 .guild-2 .guild-2-4 .guild-2-5 .guild-2-9{border:none; position:relative; padding-left:16px; width:95px; height:49px; }
+.guild .guild-0 .guild-2 .guild-2-4 .guild-2-5 .guild-2-9 i{width:13px; height:13px; position:absolute; left:6px; top:16px; background:url(../img/sprite.jpg) no-repeat -26px -152px;}
+.guild .guild-0 .guild-2 .guild-2-4 .guild-2-5 .guild-2-9 a{margin-left:-16px;}
+.guild .guild-0 .guild-2 .guild-2-10{width:424px; height:257px; background:#322b3c; border:1px solid #4b3f5c;}
+.guild .guild-0 .guild-2 .guild-2-10 .guild-2-11{width:136px; height:258px;}
+.guild .guild-0 .guild-2 .guild-2-10 .guild-2-11 img{margin-top:23px; margin-left:16px;}
+.guild .guild-0 .guild-2 .guild-2-10 .guild-2-12{width:288px; height:258px;}
+.guild .guild-0 .guild-2 .guild-2-10 .guild-2-12 ol{margin-top:28px;}
+.guild .guild-0 .guild-2 .guild-2-10 .guild-2-12 li{font-size:12px; color:#9587ab; margin-bottom:11px;}
+.guild .guild-0 .guild-3{width:322px; height:775px;}
+.guild .guild-0 .guild-3 .guild-3-1{width:424px; height:43px; position:relative; overflow:hidden;}
+.guild .guild-0 .guild-3 .guild-3-1 .guild-3-2{width:48px; height:28px; position:absolute; left:0; top:3px; background:url(../img/sprite.jpg) no-repeat -607px -349px;}
+.guild .guild-0 .guild-3 .guild-3-1 .guild-3-3{font-size:19px; color:#f3ca90; margin-left:50px; margin-top:6px; font-family:'微软雅黑';}
+.guild .guild-0 .guild-3 .guild-3-4{width:322px; height:306px; background:#26212d; border:1px solid #4b3f5c;}
+.guild .guild-0 .guild-3 .guild-3-4 .guild-3-5{width:286px; height:236px; margin-left:18px;}
+.guild .guild-0 .guild-3 .guild-3-4 .guild-3-5 .guild-3-6{width:286px; height:58px; border-bottom:1px dashed #594f67; position:relative;}
+.guild .guild-0 .guild-3 .guild-3-4 .guild-3-5 .guild-3-6 .guild-3-7{width:90px; height:58px; position:absolute; left:0; top:0; background:url(../img/sprite.jpg) no-repeat -60px -134px;}
+.guild .guild-0 .guild-3 .guild-3-4 .guild-3-5 .guild-3-6 .guild-3-8{width:196px; height:58px; margin-left:90px;}	
+.guild .guild-0 .guild-3 .guild-3-4 .guild-3-5 .guild-3-6 .guild-3-8 li{font-size:12px; color:#9587ab; margin-top:23px; padding:0 3px; border-right:1px solid #9587ab;}
+.guild .guild-0 .guild-3 .guild-3-4 .guild-3-5 .guild-3-6 .guild-3-8 .guild-3-11{border:none;}
+.guild .guild-0 .guild-3 .guild-3-4 .guild-3-5 .pol{border:none;}
+.guild .guild-0 .guild-3 .guild-3-4 .guild-4-1{width:285px; height:45px; background:url(../img/dd.jpg) no-repeat; margin:5px 0 0 18px;}
+.guild-3 .sense{width:322px; height:390px;} 
+.guild .guild-0 .guild-3 .sense-3-1{width:424px; height:43px; position:relative; overflow:hidden; margin-top:40px}
+.guild .guild-0 .guild-3 .sense-3-1 .sense-3-2{width:48px; height:28px; position:absolute; left:0; top:3px; background:url(../img/sprite.jpg) no-repeat -607px -349px;}
+.guild .guild-0 .guild-3 .sense-3-1 .sense-3-3{font-size:19px; color:#f3ca90; margin-left:50px; margin-top:6px; font-family:'微软雅黑';}
+.guild-3 .sense .sense-1{width:324px; height:306px;}
+.guild-3 .sense .sense-1 ol{width:324px; height:48px;}
+.guild-3 .sense .sense-1 li{width:107px; height:48px; border:1px solid #4b3f5c; text-align:center; line-height:48px; color:#a295b7;}
+.guild-3 .sense .sense-1 .sense-2{border-right:none;}
+.guild-3 .sense .sense-1 .sense-3{}
+.guild-3 .sense .sense-1 .sense-4{border:none; background:url(../img/lo2.jpg) no-repeat 10px 18px;}
+.guild-3 .sense .sense-5{width:322px; height:259px; background:#322b3c; overflow:hidden;}
+.guild-3 .sense .sense-5 .sense-6{width:296px; height:90px; margin:23px 0 0 11px;}
+.guild-3 .sense .sense-5 .sense-6 .sense-7{width:137px; height:90px;}
+/*=================================结尾===============================================*/
+.foolq{width:888px; height:27px; background:url(../img/game_anc.jpg) no-repeat; margin:0 auto; margin-top:-20px;}
+.foolq .foolq-1{text-align:center; color:#938c9c; font-size:15px; font-family:'微软雅黑'; padding-top:10px;}
+.foolq-2{ font-size:15px; color:#938c9c; text-align:center; margin-top:20px; line-height:30px; font-family:'微软雅黑';}
+.foot-1{width:1000px; height:10px; margin:0 auto; margin-top:40px;}
+.foot-2{width:1000px; height:100px; margin:0 auto;}
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	

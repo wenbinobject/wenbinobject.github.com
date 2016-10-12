@@ -1,0 +1,78 @@
+@charset "utf-8";
+/* CSS Document */
+/*电脑数码*/
+.dnsm-d{ width:987px; height:531px; margin:0 auto; clear:both;}
+.dnsm-d .dnsm-t-d{ width:987px; height:56px; border-bottom:1px solid #F00;}
+.dnsm-d .dnsm-t-d .dnsm-tl-d{ width:128px; height:56px; float:left;}
+.dnsm-d .dnsm-t-d .dnsm-tl-d img{ padding-top:15px;}
+.dnsm-d .dnsm-t-d .dnsm-tl-d .span1-d{ font-size:20px; line-height:56px;}
+.dnsm-d .dnsm-t-d .dnsm-tr-d{ width:858px; height:56px; float:left;}
+.dnsm-d .dnsm-t-d .dnsm-tr-d .trm-d{ width:690px; height:36px; border-top:1px solid #999; margin-top:20px; margin-left:168px;}
+.dnsm-d .dnsm-t-d .dnsm-tr-d .trm-d li{ width:60px; height:14px; margin-top:10px; float:left; font-size:12px; padding-left:15px; border-right:1px solid #999;}
+.dnsm-d .dnsm-t-d .dnsm-tr-d .trm-d .li2-d{ border-right:none;}
+.dnsm-d .dnsm-t-d .dnsm-tr-d .trm-d .li1-d a{ color:#F00;}
+.dnsm-d .dnsm-b-d{ width:987px; height:474px;}
+.dnsm-d .dnsm-b-d .dnsm-b-l{ width:330px; height:474px; float:left;}
+.dnsm-d .dnsm-b-d .dnsm-b-l .dnsm-b-lt{ width:330px; height:282px}
+.dnsm-d .dnsm-b-d .dnsm-b-l .dnsm-b-lm{ width:330px; height:72px; background:#f1fbd9;}
+.dnsm-d .dnsm-b-d .dnsm-b-l .dnsm-b-lm h2{ font-size:14px; padding-left:25px; padding-top:10px;}
+.dnsm-d .dnsm-b-d .dnsm-b-l .dnsm-b-lm p{ font-size:14px; padding-top:10px; padding-left:25px;}
+.dnsm-d .dnsm-b-d .dnsm-b-l .dnsm-b-lm .span4-d{ padding-left:60px;}
+.dnsm-d .dnsm-b-d .dnsm-b-l .dnsm-b-lm .span3-d{ padding-left:40px;}
+.dnsm-d .dnsm-b-d .dnsm-b-l .dnsm-b-lb{ width:330px; height:120px;}
+.dnsm-d .dnsm-b-d .dnsm-b-l .dnsm-b-lb .b-lb-l{ width:165px; height:120px; background:#f1fbd9; float:left;}
+.dnsm-d .dnsm-b-d .dnsm-b-l .dnsm-b-lb .b-lb-l li{ font-size:12px; float:left; padding-left:15px; padding-top:10px;}
+.dnsm-d .dnsm-b-d .dnsm-b-l .dnsm-b-lb .b-lb-l .li3-d a{ color:#F00;}
+.dnsm-d .dnsm-b-d .dnsm-b-l .dnsm-b-lb .b-lb-r{ width:165px; height:120px; background:#f1fbd9; float:left;}
+.dnsm-d .dnsm-b-d .dnsm-b-l .dnsm-b-lb .b-lb-r li{ font-size:12px; float:left; padding-left:20px; padding-top:10px;}
+.dnsm-d .dnsm-b-d .dnsm-b-l .dnsm-b-lb .b-lb-r .li5-d a{ color:#F00;}
+.dnsm-d .dnsm-b-d .dnsm-b-m{ width:440px; height:474px; float:left;}
+.dnsm-d .dnsm-b-d .dnsm-b-m .dnsm-b-mt{ width:440px; height:236px;}
+.dnsm-d .dnsm-b-d .dnsm-b-m .dnsm-b-mb{ width:440px; height:236px;}
+.dnsm-d .dnsm-b-d .dnsm-b-m .dnsm-b-mb .dnsm-b-mb-l{ width:219px; height:236px; float:left; border-bottom:1px solid #999; border-right:1px solid #999;}
+.dnsm-d .dnsm-b-d .dnsm-b-m .dnsm-b-mb .dnsm-b-mb-r{ width:219px; height:236px; float:left; border-bottom:1px solid #999; border-right:1px solid #999;}
+.dnsm-d .dnsm-b-d .dnsm-b-r{ width:217px; height:474px; float:left;}
+.dnsm-d .dnsm-b-d .dnsm-b-r .dnsm-b-r1{ width:217px; height:117px; border-bottom:1px solid #999;}
+.dnsm-d .dnsm-b-d .dnsm-b-r .dnsm-b-r2{ width:217px; height:117px; border-bottom:1px solid #999;}
+.dnsm-d .dnsm-b-d .dnsm-b-r .dnsm-b-r3{ width:217px; height:236px; border-bottom:1px solid #999;}
+/*家具收纳*/
+.jjsn-d{ width:987px; height:209px; margin:0 auto;}
+.jjsn-d .jjsn-d-t{ width:987px; height:66px; margin-top:20px;}
+.jjsn-d .jjsn-d-b{ width:987px; height:170px; margin-top:20px; padding-left:15px;}
+/*运动健身*/
+.ydjs-d{ width:987px; height:530px; margin:0 auto;}
+.ydjs-d .ydjs-t-d{ width:987px; height:56px; border-bottom:1px solid #F00;}
+.ydjs-d .ydjs-t-d .ydjs-tl-d{ width:128px; height:56px; float:left;}
+.ydjs-d .ydjs-t-d .ydjs-tl-d img{ padding-top:15px;}
+.ydjs-d .ydjs-t-d .ydjs-tl-d .span1-d{ font-size:20px; line-height:56px; padding-left:5px;}
+.ydjs-d .ydjs-t-d .ydjs-tr-d{ width:858px; height:56px; float:left;}
+.ydjs-d .ydjs-t-d .ydjs-tr-d .trm-d{ width:690px; height:36px; border-top:1px solid #999; margin-top:20px; margin-left:168px;}
+.ydjs-d .ydjs-t-d .ydjs-tr-d .trm-d li{ width:60px; height:14px; margin-top:10px; float:left; font-size:12px; padding-left:35px; border-right:1px solid #999;}
+.ydjs-d .ydjs-t-d .ydjs-tr-d .trm-d .li2-d{ border-right:none;}
+.ydjs-d .ydjs-t-d .ydjs-tr-d .trm-d .li1-d a{ color:#F00;}
+.ydjs-d .ydjs-b-d{ width:987px; height:474px;}
+.ydjs-d .ydjs-b-d .ydjs-b-1{ width:210px; height:474px; float:left;}
+.ydjs-d .ydjs-b-d .ydjs-b-1 .b-d-t{ width:210px; height:237px;s}
+.ydjs-d .ydjs-b-d .ydjs-b-1 .b-d-m{ width:210px; height:92px; background:#f7dfdf;}
+.ydjs-d .ydjs-b-d .ydjs-b-1 .b-d-m li{ float:left; font-size:14px; padding-top:15px; padding-left:10px; }
+.ydjs-d .ydjs-b-d .ydjs-b-1 .b-d-b{ width:210px; height:145px; background:#f2d2d3;}
+.ydjs-d .ydjs-b-d .ydjs-b-1 .b-d-b h2{ font-size:14px; padding-top:28px; padding-left:24px;}
+.ydjs-d .ydjs-b-d .ydjs-b-1 .b-d-b p{ font-size:14px; padding-top:10px; padding-left:24px;}
+.ydjs-d .ydjs-b-d .ydjs-b-1 .b-d-b li{ float:left; font-size:14px; padding-left:12px; padding-top:14px;}
+.ydjs-d .ydjs-b-d .ydjs-b-1 .b-d-b .li6 a{ color:#F00;}
+.ydjs-d .ydjs-b-d .ydjs-b-2{ width:220px; height:474px; float:left;}
+.ydjs-d .ydjs-b-d .ydjs-b-2 .img2{ border-bottom:1px solid #999;}
+.ydjs-d .ydjs-b-d .ydjs-b-3{ width:340px; height:474px; float:left;}
+.ydjs-d .ydjs-b-d .ydjs-b-3 .img1{ border-bottom:1px solid #999;}
+.ydjs-d .ydjs-b-d .ydjs-b-4{ width:215px; height:474px; float:left;}
+.ydjs-d .ydjs-b-d .ydjs-b-4 .img3{ border-bottom:1px solid #999;}
+/*菜百首饰*/
+.cbss-d{ width:987px; height:66px; margin:0 auto; margin-top:10px;}
+/*居家生活*/
+.ydjs-d .ydjs-b-d .ydjs-b-1 .b-d-b1{ width:210px; height:145px; background:#f3efd2;}
+.ydjs-d .ydjs-b-d .ydjs-b-1 .b-d-b1 h2{ font-size:14px; padding-top:28px; padding-left:24px;}
+.ydjs-d .ydjs-b-d .ydjs-b-1 .b-d-b1 p{ font-size:14px; padding-top:10px; padding-left:24px;}
+.ydjs-d .ydjs-b-d .ydjs-b-1 .b-d-b1 .li7 a{ color:#F00;}
+.ydjs-d .ydjs-b-d .ydjs-b-1 .b-d-b1 li{ float:left; font-size:14px; padding-left:12px; padding-top:14px;}
+.ydjs-d .ydjs-b-d .ydjs-b-1 .b-d-m1{ width:210px; height:92px; background:#f6f5e0;}
+.ydjs-d .ydjs-b-d .ydjs-b-1 .b-d-m1 li{ float:left; font-size:14px; padding-top:15px; padding-left:10px;}

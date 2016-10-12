@@ -1,0 +1,12 @@
+.top-box .nav{
+    width:940px;
+}
+.nav .list{
+    display:none;
+
+}
+.content{
+    width:970px;
+    padding:15px 0;
+    margin:40px auto;
+}

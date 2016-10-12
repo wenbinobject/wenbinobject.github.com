@@ -1,0 +1,90 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>CD盒子</title>
+<style>
+	*{
+		padding:0;
+		margin:0;
+		list-style:none;
+		}
+	html,body{
+		overflow:hidden;
+		}
+	.box{
+		width:1920px;
+		height:1920px;
+		background:url(img/bg.jpg) no-repeat;
+		overflow:hidden;
+		}
+	.box ul{
+		width:1000px;
+		height:200px;
+		margin:300px 160px;
+		
+		}
+	.box .disc{
+		width:200px;
+		height:200px;
+		float:left;
+		margin-left:50px;
+		position:relative;
+		transition:0.5s all ease ;
+		}
+	.box .disc .disc1{
+		width:200px;
+		height:200px;
+		position:absolute;
+		left:0;
+		top:0;
+		background:url(img/img_01.jpg) no-repeat;
+		z-index:1;
+		transition:0.5s all ease ;
+		box-shadow:5px -5px 20px #000;
+		}
+		
+	.box .disc .disc2{
+		width:200px;
+		height:200px;
+		position:absolute;
+		left:0;
+		top:0;
+		background:url(img/cd.png) no-repeat;
+		transition:0.5s all ease ;
+		-webkit-transform:rotate(0deg);
+	
+	}
+	.box .disc:hover .disc1{
+		top:20px;
+		}
+	.box .disc:hover .disc2{
+		top:-20px;
+		-webkit-transform:rotate(45deg);
+		}
+</style>
+</head>
+
+<body>
+	<div class="box">
+    	<ul>
+        	<li class="disc">
+            	<span class="disc1"></span>
+                <span class="disc2"></span>
+            </li>
+            <li class="disc">
+            	<span class="disc1"></span>
+                <span class="disc2"></span>
+            </li>
+            <li class="disc">
+            	<span class="disc1"></span>
+                <span class="disc2"></span>
+            </li>
+            <li class="disc">
+            	<span class="disc1"></span>
+                <span class="disc2"></span>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>

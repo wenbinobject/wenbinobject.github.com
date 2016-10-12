@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>简易屏保</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+        }
+        body{
+            background:#000;
+        }
+    </style>
+    <script>
+        //随机
+        function ran(n,m){
+            return Math.floor(Math.random()*(m-n)+n);
+        }
+        window.onload = function(){
+            var oC = document.querySelector('canvas');
+            oC.width = document.documentElement.clientWidth;
+            oC.height = document.documentElement.clientHeight;
+            var gd = oC.getContext('2d');
+            var LEN = 50;
+            var aOldPoint = [];
+
+            var N = 5;
+            var aPoint = [];
+            for(var i=0; i<N; i++){
+                aPoint.push({
+                    x:ran(0,oC.width),
+                    y:ran(0,oC.height),
+                    iSpeedX:ran(-10,10),
+                    iSpeedY:ran(-10,10)
+                })
+            }
+
+            setInterval(function(){
+                //清除
+                gd.clearRect(0,0,oC.width,oC.height);
+                for(var i=0; i<N; i++){
+                    if(aPoint[i].x<0){
+                        aPoint[i].iSpeedX*=-1;
+                    }
+
+                    if(aPoint[i].y<0){
+                        aPoint[i].iSpeedY*=-1;
+                    }
+
+                    if(aPoint[i].x>oC.width){
+                        aPoint[i].iSpeedX*=-1;
+                    }
+
+                    if(aPoint[i].y>oC.height){
+                        aPoint[i].iSpeedY*=-1;
+                    }
+                    aPoint[i].x+=aPoint[i].iSpeedX;
+                    aPoint[i].y+=aPoint[i].iSpeedY;
+                }
+                for(var i=0; i<N; i++){
+                    createPoint(aPoint[i]);
+                }
+                //连接线
+                gd.beginPath();
+                gd.moveTo(aPoint[0].x,aPoint[0].y);
+                for(var i=1;i<N;i++){
+                    gd.lineTo(aPoint[i].x,aPoint[i].y);
+                }
+                gd.closePath();
+                gd.strokeStyle = '#fff';
+                gd.stroke();
+
+                var arr = [];
+                for(var i=0;i<N;i++){
+                    arr.push({
+                        x:aPoint[i].x,
+                        y:aPoint[i].y,
+                        iSpeedX:aPoint[i].iSpeedX,
+                        iSpeedY:aPoint[i].iSpeedY
+                    });
+                }
+
+                //限制个数
+                aOldPoint.push(arr);
+                if(aOldPoint.length>LEN){
+                    aOldPoint.shift();
+                }
+
+                //连线
+                for(var i=0;i<LEN;i++){
+                    gd.beginPath();
+                    gd.moveTo(aOldPoint[i][0].x,aOldPoint[i][0].y);
+                    for(var j=1;j<aOldPoint[i].length;j++){
+                        gd.lineTo(aOldPoint[i][j].x,aOldPoint[i][j].y);
+                    }
+                    gd.closePath();
+                    gd.strokeStyle = 'rgba('+ran(0,256)+',0,255,'+(i/LEN)+')';
+                    gd.stroke();
+                }
+
+            },16);
+
+
+            //画点
+            function createPoint(aPoint){
+                gd.beginPath();
+                gd.rect(aPoint.x,aPoint.y,1,1);
+                gd.fillStyle = 'rgb('+ran(0,256)+','+ran(0,256)+','+ran(0,256)+')';
+                gd.fill();
+            }
+
+        };
+    </script>
+</head>
+<body>
+    <canvas></canvas>
+</body>
+</html>

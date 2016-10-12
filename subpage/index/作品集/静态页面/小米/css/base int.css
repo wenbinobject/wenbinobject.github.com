@@ -1,0 +1,14 @@
+.w{width:930px; margin:0 auto;}
+.fl{float:left;}
+.fr{float:right;}
+
+.header .logo{width:70px; height:70px; background:url(../img/logo.jpg) no-repeat;}
+.header .logo a{width:70px; height:70px; display:block; text-indent:-999px;}
+.header .box1 .box-1{width:560px; height:40px; margin-top:15px;}
+.header .box1{width:560px; height:110px;}
+.header .box1 .box-1 .wowo{width:424px; height:40px; background:#FF3;}
+.header .box1 .box-1 .toto{width:76px; height:40px; font-size:12px; font-family:'微软雅黑'; line-height:40px;
+                           background:url(../img/che.jpg) no-repeat 34px 13px #ffdb3d; padding-left:50px;}
+.header .box1 .gowu{background:url(../img/2.jpg) no-repeat; font-size:12px; color:#999; width:144px; text-align:right; height:20px;
+					margin-top:20px; line-height:20px;}
+.header h1{margin-top:25px;}

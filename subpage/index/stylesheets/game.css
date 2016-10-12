@@ -1,0 +1,240 @@
+/*导航顶部条*/
+body{
+    background:#203f5c;
+    overflow-x:hidden
+}
+.nav_top{
+    width:100%;
+    height:36px;
+    background:#f6f6f6;
+    border-bottom:2px solid #eee;
+    font-size:14px;
+    font-family:'微软雅黑';
+    color:#666;
+}
+.nav_top .nav_top2{
+    width:420px;
+    height:36px;
+    margin-left:800px;
+}
+.nav_top .nav_top2 span{
+    height:36px;
+    display:inline-block;
+    line-height:36px;
+    float:left;
+}
+.nav_top .nav_top2 .codeBox{
+    float:right;
+    width:100px;
+    height:36px;
+    background:url(../images/Sprite.png) no-repeat 0 6px;
+    margin-left:10px;
+    line-height:36px;
+    padding-left:35px;
+    position:relative;
+    cursor:pointer;
+}
+.nav_top .codeBox .code{
+    width:100px;
+    height:100px;
+    background:url(../images/Sprite.png) no-repeat 0 -49px;;
+    position:absolute;
+    top:-100px;
+    left:0;
+    z-index:2;
+}
+
+/*导航*/
+.nav{
+    width:1920px;
+    height:62px;
+    position:relative;
+    background:#222;
+}
+.nav .head{
+    width:100px;
+    height:100px;
+    border-radius:50%;
+    position:absolute;
+    z-index:999;
+    left:85px;
+    top:-25px;
+    overflow:hidden;
+    transition:1s all ease;
+    cursor:pointer;
+}
+.nav .head span{
+    width:100px;
+    height: 35px;
+    background:#333333;
+    position:absolute;
+    font:12px '微软雅黑';
+    left:0;
+    top:95px;
+    text-align: center;
+    line-height:35px;
+    color:#fff;
+    transition:0.5s all ease;
+    opacity:0.7;
+}
+.nav .nav_right{
+    width:580px;
+    height:62px;
+    position:absolute;
+    right:700px;
+    top:0;
+    z-index:1;
+}
+.nav .nav_right li{
+    width:110px;
+    height:62px;
+    text-align:center;
+    line-height:62px;
+    font-size:16px;
+    font-family:'微软雅黑';
+    float:left;
+    color:#333333;
+    cursor:pointer;
+}
+.nav .nav_right li a{
+    width:110px;
+    height:62px;
+    display:block;
+    color:#fff;
+}
+.nav span{
+    width:133px;
+    height:62px;
+    background:url(../images/1.png) no-repeat 0 9px;
+    position:absolute;
+    left:960px;
+    top:0;
+}
+/*内容区域*/
+.content{
+    width:1000px;
+    height:100%;
+    margin:0 auto;
+}
+.content .content-t{
+    width:1000px;
+    height:1120px;
+    border-radius:30px;
+    background:#f6f6f6;
+    overflow:hidden;
+    margin-top:20px;
+}
+.content .content-t .min-nav{
+    width:1000px;
+    height:50px;
+    text-align:center;
+    line-height:50px;
+    font-size:16px;
+    font-family:'微软雅黑';
+    margin:10px 0 0 10px;
+    border-bottom:1px solid #ccc;
+}
+.content .content-t .min-nav span{
+    width:500px;
+    font-size:12px;
+    float:right;
+    color:#666;
+}
+.content .content-t .min-nav .page{
+    width:150px;
+    height:50px;
+    background:#005bac;
+    float:left;
+    color:#fff;
+    border-radius:30px;
+}
+.content .content-t .min-nav .unit{
+    width:150px;
+    height:50px;
+    background:#4c8cc5;
+    float:left;
+    color:#fff;
+    border-radius:30px;
+    margin-left:-40px;
+}
+/*个人简历*/
+.content .content-t .me{
+    width:1000px;
+    height:100%;
+}
+.content .content-t .me h2{
+    font-size:20px;
+    font-family:'微软雅黑';
+    margin:20px 0 0 20px;
+    color:#666;
+}
+/*展现*/
+.content .content-t .me .show{
+    width:970px;
+    height:954px;
+    margin:0 auto;
+}
+.content .content-t .me .show ol{
+    height:954px;
+    overflow:hidden;
+}
+.content .content-t .me .show ol li{
+    width:311px;
+    height:300px;
+    background:#666;
+    margin-right:18px;
+    float:left;
+    margin-top:18px;
+    position:relative;
+    overflow:hidden;
+    display:none;
+}
+.content .content-t .me .show ol li span{
+    position:absolute;
+    left:-311px;
+    top:0;
+    width:311px;
+    height:300px;
+    background:url('../images/lj.png') no-repeat;
+
+}
+.content .content-t .me .show ol li span a{
+    width:311px;
+    height:100px;
+    padding-top:200px;
+    display:block;
+    color:#fff;
+    font-family:'微软雅黑';
+    text-align:center;
+    font-size:30px;
+
+}
+/*页数*/
+.content .content-t .me .page{
+    width:1000px;
+    height:50px;
+    margin:0 auto;
+    overflow:hidden;
+}
+.content .content-t .me .page ul{
+    width:100%;
+    margin-left:50px;
+
+}
+.content .content-t .me .page ul li{
+    width:30px;
+    height:30px;
+    background:#ccc;
+    margin-left:15px;
+    margin-top:10px;
+    border-radius:4px;
+    text-align:center;
+    line-height:30px;
+    float:left;
+    cursor:pointer;
+}
+.kong{
+    height:50px;
+    width:1000px;
+    margin:0 auto;
+}

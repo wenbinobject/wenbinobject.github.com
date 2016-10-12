@@ -1,0 +1,377 @@
+/*导航顶部条*/
+body{
+	overflow-x:hidden
+}
+
+.nav_top{
+	width:100%;
+	height:36px;
+	background:#f7f8f8;
+	border-bottom:2px solid #666;
+	font-size:14px;
+	font-family:'微软雅黑';
+	color:#666;
+}
+.nav_top .nav_top2{
+	width:420px;
+	height:36px;
+	margin-left:800px;
+}
+.nav_top .nav_top2 span{
+	height:36px;
+	display:inline-block;
+	line-height:36px;
+	float:left;
+}
+.nav_top .nav_top2 .codeBox{
+	float:right;
+	width:100px;
+	height:36px;
+	background:url(../images/Sprite.png) no-repeat 0 6px;
+	margin-left:10px;
+	line-height:36px;
+	padding-left:35px;
+	position:relative;
+	cursor:pointer;
+}
+.nav_top .codeBox .code{
+	width:100px;
+	height:100px;
+	background:url(../images/Sprite.png) no-repeat 0 -49px;;
+	position:absolute;
+	top:-100px;
+	left:0;
+	z-index:2;
+}
+
+/*导航*/
+.nav{
+	width:1920px;
+	height:62px;
+	position:relative;
+	margin:auto;
+	/*background:url(../images/e1.jpg) no-repeat -312px;*/
+	background:#222;
+	box-shadow:2px 2px 5px #666;
+}
+.nav .head{
+	width:100px;
+	height:100px;
+	border-radius:50%;
+	position:absolute;
+	z-index:999;
+	left:85px;
+	top:-25px;
+	overflow:hidden;
+	transition:1s all ease;
+	cursor:pointer;
+}
+.nav .head span{
+	width:100px;
+	height: 35px;
+	background:#333333;
+	position:absolute;
+	font:12px '微软雅黑';
+	left:0;
+	top:95px;
+	text-align: center;
+	line-height:35px;
+	color:#fff;
+	transition:0.5s all ease;
+	opacity:0.7;
+}
+.nav .nav_right{
+	width:580px;
+	height:62px;
+	position:absolute;
+	right:700px;
+	top:0;
+	z-index:1;
+}
+.nav .nav_right li{
+	width:110px;
+	height:62px;
+	text-align:center;
+	line-height:62px;
+	font-size:16px;
+	font-family:'微软雅黑';
+	float:left;
+	color:#fff;
+	cursor:pointer;
+}
+.nav .nav_right li a{
+	width:110px;
+	height:62px;
+	display:block;
+	color:#fff;
+}
+.nav span{
+	width:133px;
+	height:62px;
+	background:url(../images/1.png) no-repeat 0 9px;
+	position:absolute;
+	left:630px;
+	top:0;
+}
+/*全屏*/
+.Picture{
+	width:100%;
+	height:562px;
+	margin:0 auto 0;
+}
+.Picture .Picture1{
+	position:relative;
+	box-shadow:inset 0 6px 8px #ccc;
+	width:100%;
+	height:100%;
+	background:url(../images/baner.png) no-repeat;
+	overflow:hidden;
+}
+/*菜单*/
+.Picture .Picture1 .menu{
+	width:260px;
+	height:460px;
+	background:#3d383e;
+	margin:40px 0 0 38px;
+	overflow:hidden;
+}
+.Picture .Picture1 .menu ul{
+	margin-top:50px;
+}
+.Picture .Picture1 .menu ul li{
+	font-size:15px;
+	font-family:'微软雅黑';
+	line-height:40px;
+	position:relative;
+	width:225px;
+	height:40px;
+	padding-left:50px;
+	letter-spacing:1px;
+	cursor:pointer;
+	margin-bottom:15px;
+}
+.Picture .Picture1 .menu ul li i{
+	width:25px;
+	height:25px;
+	background:url("../images/Sprite.png") no-repeat 0 -167px;
+	display:inline-block;
+	position:absolute;
+	top:7px;
+	left:20px;
+}
+.Picture .Picture1 .menu ul li em{
+	width:25px;
+	height:25px;
+	line-height:25px;
+	display:inline-block;
+	position:absolute;
+	top:7px;
+	right:10px;
+}
+/*全屏大图*/
+.screen{
+	width:100%;
+	height:550px;
+
+	overflow:hidden;
+}
+.screen .screen-z{
+	background:url("../images/screen3.png") no-repeat center bottom;
+	height:550px;
+	margin:auto;
+}
+.screen .screen-z2{
+	background:url("../images/screen4.png") no-repeat center bottom;
+	height:550px;
+	margin:auto;
+}
+.screen .screen-z .ship{
+	width:300px;
+	height:135px;
+	margin:320px auto;
+	opacity:1;
+	transition:200s all linear;
+	position:absolute;
+	left:50%;
+}
+.screen .screen-z .ship .ship-1{
+	left:100px;
+	top:30px;
+	width:300px;
+	font:16px '微软雅黑';
+	color:#fff;
+	text-shadow:2px 2px 3px #000;
+	display:none;
+	position:absolute;
+	-webkit-transform-origin:65px center;
+	-ms-transform-origin:65px center;
+	-moz-transform-origin:65px center;
+	transform-origin:65px center;
+	transition:1s all ease;
+
+}
+.screen .screen-z .ship img{
+	transition:200s all linear;
+	width:300px;
+	height:135px;
+}
+.screen .screen-z .content{
+	width:600px;
+	height:300px;
+	position:absolute;
+	left:50px;
+	top:60px;
+	font:16px "微软雅黑";
+	color:#fff;
+	text-shadow:2px 2px 2px #000;
+
+}
+/*产品*/
+.product{
+	height:240px;
+	background:#f1f0ee;
+}
+.product .product-content{
+	width:1000px;
+	height:250px;
+	margin:auto;
+	overflow:hidden;
+}
+.product .product-content .product-css3{
+	width:1000px;
+	height:30px;
+	border-bottom:2px solid #fff;
+}
+.product .product-content p{
+	width:150px;
+	height:30px;
+	background:#333;
+	margin-top:20px;
+	text-align:center;
+	line-height:30px;
+	font-size:16px;
+	font-family:"微软雅黑";
+	color:#fff;
+
+}
+.product .product-content p span{
+	color:aqua;
+}
+.product .product-content ul{
+	width:1000px;
+	height:180px;
+	margin-top:10px;
+}
+.product .product-content ul li{
+	width: 200px;
+	height: 140px;
+	float:left;
+	position:relative;
+}
+.product .product-content ul li a{
+	overflow:hidden;
+	display:block;
+	width: 185px;
+	height: 118px;
+	background:#fff;
+	margin:5px 5px 0;
+	border:1px solid #666;
+	position:absolute;
+	left:0;
+	top:0;
+	z-index: 2;
+}
+.product .product-content ul li a img{
+	margin: auto auto;
+	width: 185px;
+}
+.product .product-content ul li span{
+	width: 200px;
+	height: 155px;
+	background:#333;
+	position:absolute;
+	left:0;
+	top:0;
+	opacity:0;
+	transition:0.5s all ease;
+}
+.product .product-content ul li span i{
+	position:absolute;
+	width:200px;
+	bottom:7px;
+	text-align:center;
+	color:#fff;
+	font-family:'微软雅黑';
+}
+/*个人简介*/
+.gr{
+	width:100%;
+	height:450px;
+	background:#264b6e;
+	overflow:hidden;
+}
+.gr .rw{
+	width:300px;
+	height:125px;
+	margin:40px auto;
+}
+.gr p{
+	font-size:25px;
+	color:#fff;
+	text-align:center;
+	font-family:'微软雅黑';
+	margin-top:20px;
+}
+.gr .grjj{
+	width:320px;
+	height:60px;
+	margin:50px auto;
+	overflow:hidden;
+}
+.gr .grjj div{
+	position:relative;
+	overflow:hidden;
+}
+.gr .grjj div span{
+	position:absolute;
+	left:-152px;
+	top:0;
+	border-radius:30px;
+	width:150px;
+	height:60px;
+	background:#222;
+}
+.gr .grjj div a{
+	width:150px;
+	height:60px;
+	display:block;
+	font-size:20px;
+	color:#fff;
+	text-align:center;
+	line-height:60px;
+	font-family:'微软雅黑';
+	position:absolute;
+	z-index:9;
+}
+.gr .grjj .l{
+	width:150px;
+	height:60px;
+	box-sizing:border-box;
+	border:1px solid #fff;
+	float:left;
+	border-radius:30px;
+}
+.gr .grjj .r{
+	width:150px;
+	height:60px;
+	box-sizing:border-box;
+	border:1px solid #fff;
+	float:right;
+	border-radius:30px;
+}
+/*底部*/
+.db{
+	width:100%;
+	height:50px;
+	background:#222;
+}

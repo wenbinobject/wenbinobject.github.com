@@ -1,0 +1,768 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>小米网</title>
+<link href="css/base.css" rel="stylesheet" />
+<link href="css/base int.css" rel="stylesheet" />
+<style>
+/*顶部代码*/
+.top{width:100%; height:36px; background:#fafafa; border-bottom:1px solid #ccc;}
+.top .top1{width:930px; height:12px; margin:0 auto; font-size:12px; line-height:12px; padding-top:12px;}
+.top ul a{float:left; padding:0px 17px; border-right:1px solid #CCC;}
+.top .top1 .top8{padding-left:0;}
+.top ul li a{color:#8c8c8c;}
+.top .top1 .top2{border-right:0px;}
+.top .top1 .top3{float:right;}
+.top .top1 .top4{float:right; border-right:0; padding-right:0;}
+/*---------------------------------------------------------------*/
+.beader{width:930px; height:110px; margin:0 auto;}
+h1{background:url(img/logo.jpg) no-repeat 0 25px; width:70px; height:100px; text-indent:-999em; float:left;}
+.beader a{display:block; width:70px; height:100px;}
+.beader .beader-1{font-size:12px; color:#8c8c8c; float:right; width:145px; height:18px; background:url(img/2.jpg) no-repeat; line-height:18px;
+				  margin-top:22px;}
+.beader .beader-3{background:url(img/1.jpg) no-repeat; width:424px; height:40px; float:right; margin-top:55px; margin-right:-8px;}
+.beader .beader-4{background:url(img/3.jpg) no-repeat; width:126px; height:40px; float:right; margin-top:55px; margin-right:-560px;}
+
+.nav{width:930px; height:50px; margin:0 auto; color:#FFF; font-size:16px; font-faily:'微软雅黑';}
+.nav .nav1{width:248px; height:50px; background:#ff4a00; float:left; text-align:center; line-height:50px;}
+.nav .nav2{width:682px; height:50px; background:#404144; float:left; line-height:50px;}
+.nav .nav2 li{float:left; margin:0 11px;}
+/*-----------------------------------------------------*/
+.content-box{width:930px; height:592px; margin:0 auto;}
+.content{width:248px; height:592px; float:left;}
+.content-2{width:682px; height:592px; background:#9F9; float:left;}
+.content dl{width:206px; height:33px; border:1px solid #dfdfdf; border-top:0; font-size:14px; font-family:'微软雅黑'; color:#6d6d6d; padding:20px; line-height:20px;}
+.content dt{color:#ff4a00;}
+.content dd{float:left; margin-right:7px;}
+
+.content-2 .content-3{width:682px; height:420px; background:url(img/4.jpg) no-repeat;}
+.content-2 .content-4 .content-5{width:226px; height:170px; border:1px solid #CCC; background:#f3f3f3; float:left; border-left:0;}
+.content-2 .content-4 .content-6{width:226px; height:170px; border:1px solid #CCC; background:#f3f3f3; float:left; border-left:0;}
+.content-2 .content-4 .content-7{width:227px; height:170px; border:1px solid #CCC; background:#f3f3f3; float:left; border-left:0;}
+.content-2 .content-4 .content-8{font-size:15px; font-family:'微软雅黑'; text-align:center; padding-top:23px;}
+.content-2 .content-4 .content-9{font-size:12px; font-family:'微软雅黑'; text-align:center; color:#828282;}
+.content-2 .content-4 .content-10{padding-left:45px; padding-top:17px;}
+.content-2 .content-4 .content-5 img{margin-top:14px;}
+.content-2 .content-4 .content-6 img{margin-top:14px;}
+.content-2 .content-4 .content-7 img{margin-top:14px;}
+/*===============================================================================*/
+.column{width:930px; height:60px; margin:0 auto;}
+.column-h{font-size:16px; color:#333; padding-top:26px; float:left;}
+.column-h1{font-size:12px; color:#333;}
+.column-h2{float:right; padding-top:30px;}
+.column-h2 .column-h3{width:28px; height:18px; border:1px solid #ccc; float:left; background:url(img/8.jpg) no-repeat 10px 3px;}
+.column-h2 .column-h4{width:28px; height:18px; border:1px solid #ccc; float:left; background:url(img/9.jpg) no-repeat 10px 3px;}
+/*===============================================================================*/
+.main{width:930px; height:310px; margin:0 auto;}
+.main1{width:308px; height:308px; border:1px solid #ccc; float:left;}
+.main2{width:308px; height:308px; border:1px solid #ccc; float:left; border-left:0; border-right:0;}
+.main3{width:308px; height:308px; border:1px solid #ccc; float:left;}
+.main1 .main4{font-size:16px; font-family:'微软雅黑'; text-align:center; padding-top:10px;}
+.main1 .main5{font-size:12px; color:#666; font-family:'微软雅黑'; text-align:center;}
+.main1 .main6{font-size:16px; font-family:'微软雅黑'; text-align:center; padding-top:10px;}
+.main1 .main7{font-size:12px; color:#666; font-family:'微软雅黑'; text-align:center;}
+.main1 .main8{font-size:16px; font-family:'微软雅黑'; text-align:center; padding-top:10px;}
+.main1 .main9{font-size:12px; color:#666; font-family:'微软雅黑'; text-align:center;}
+/*===============================================================================*/
+.new{width:930px; height:65px; margin:0 auto;}
+.new .new1{font-size:19px; color:#333; font-family:'微软雅黑'; padding-top:30px; float:left;}
+.new .new2{font-size:12px; color:#333; font-family:'微软雅黑'; padding-top:30px; float:right;}
+
+.new-contentbox{width:930px; height:930px; margin:0 auto;}
+.new-content{width:619px; height:929px; border:1px solid #ccc; float:left;}
+.new-content-1{width:308px; height:929px; float:left;}
+.new-content-2{width:619px; height:308px;}
+.new-content-3{width:619px; height:308px;}
+.new-content-3 .new-content-4{width:308px; height:308px; float:left; border:1px solid #ccc;}
+.new-content-3 .new-content-5{width:308px; height:154px; float:left; border:1px solid #ccc; border-left:0;}
+.new-content-3 .new-content-6{width:308px; height:154px; float:left; border:1px solid #ccc; border-left:0; border-top:0; border-bottom:0;}
+.new-content-7{width:619px; height:308px;} 
+.new-content-7 .new-content-8{width:308px; height:308px; float:left; border:1px solid #ccc; border-bottom:0;} 
+.new-content-7 .new-content-9{width:308px; height:308px; float:left; border:1px solid #ccc; border-left:0; border-right:0; border-bottom:0;} 
+.new-content-2 h2{font-size:35px; font-family:'微软雅黑'; color:#2f2f2f; padding:61px 0 0 31px; font-weight:bold;}
+.new-content-2 .fumu{font-size:12px; color:#666; padding:12px 0 0 31px;}
+.new-content-2 .fumu2{font-size:19px; color:#666; padding:28px 0 0 31px;}
+.new-content-2 .fumu3{float:right; margin-top:-180px;}
+.new-content-3 .new-content-4{font-size:12px; font-family:'微软雅黑';}
+.new-content-3 .new-content-4 .by{width:70px; height:20px; background:#f32f39; color:#fff; text-align:center; line-height:20px; margin-left:213px; margin-bottom:13px;}
+.new-content-3 .new-content-4 .by-1{margin-left:30px; margin-bottom:9px;}
+.new-content-3 .new-content-4 .by-2{margin-left:30px;}
+.new-content-3 .new-content-4 .by-2 span{text-decoration:line-through; color:#666;}
+.new-content-3 .new-content-4  img{margin-top:9px;}
+.new-content-3 .new-content-5 .qcy{font-size:12px; line-height:21px; margin-left:30px; margin-top:30px;}
+.new-content-3 .new-content-6 .xmsj{font-size:12px; line-height:21px; margin-left:30px; margin-top:30px;}
+.new-content-3 .new-content-5 img{margin:-72px 0 0 169px;}
+.new-content-3 .new-content-6 img{margin:-72px 0 0 169px;}
+.new-content-7  .new-content-8 .new-content-10{font-size:12px; margin:30px 0 0 30px; line-height:20px;}
+.new-content-7  .new-content-9 .new-content-11{font-size:12px; margin:30px 0 0 30px; line-height:20px;}
+.new-content-7  .new-content-8 img{margin-top:7px;}
+.new-content-7  .new-content-9 img{margin-top:6px;}
+/*侧栏*/
+.sidebar{width:308px; height:126px; border-top:1px solid #ccc; border-right:1px solid #ccc;}
+.sidebar1{width:308px; height:126px; border-top:1px solid #ccc; border-right:1px solid #ccc;}
+.sidebar2{width:248px; height:219px; border-top:1px solid #ccc; border-right:1px solid #ccc; padding:30px;}
+.sidebar3{width:248px; height:208px; border-top:1px solid #ccc; border-right:1px solid #ccc; border-bottom:1px solid #ccc; padding:30px;}
+.sidebar .sidebar-1{width:70px; height:20px; background:#f32f39; font-size:12px; color:#FFF; text-align:center; line-height:20px; font-family:'微软雅黑';
+                    margin-left:30px;}
+.sidebar1 .sidebar-2{margin-left:30px;}
+.sidebar .sidebar-2{font-size:16px; color:#333; font-family:'微软雅黑'; margin-left:30px; margin-top:15px;}
+.sidebar .sidebar-3{font-size:12px; color:#f32f39; font-family:'微软雅黑'; margin-left:30px; margin-top:8px;}
+.sidebar .sidebar-3 span{color:#666; text-decoration:line-through;}
+.sidebar .sidebar-4{font-size:12px; color:#6d6d6d; font-family:'微软雅黑'; margin-left:30px; margin-top:8px;}
+.sidebar1 .sidebar-2{font-size:16px; color:#333; font-family:'微软雅黑'; margin-left:30px; margin-top:30px;}
+.sidebar1 .sidebar-3{font-size:12px; color:#6d6d6d; font-family:'微软雅黑'; margin-left:30px; margin-top:8px;}
+.sidebar1 .sidebar-4{font-size:12px; color:#6d6d6d; font-family:'微软雅黑'; margin-left:30px; margin-top:8px;}
+.sidebar img{float:right; margin-top:-90px; margin-right:18px;}
+.sidebar1 img{float:right; margin-top:-85px; margin-right:18px;}
+.sidebar2 .sidebar2-1{font-size:17px; font-family:'微软雅黑'; margin-bottom:15px;}
+.sidebar2 .sidebar2-2{width:231px; height:38px; border:1px solid #ccc; line-height:38px; padding-left:15px; color:#ccc; margin-bottom:10px;}
+.sidebar2 .sidebar2-3{width:231px; height:38px; border:1px solid #ccc; line-height:38px; padding-left:15px; color:#ccc; margin-bottom:20px;}
+.sidebar2 .sidebar2-4{font-size:12px; color:#6d6d6d; margin-bottom:20px}
+.sidebar2 .sidebar2-5{width:248px; height:40px; background:#dcdee4; color:#FFF; font-size:14px; text-align:center; line-height:40px; display:block;}
+.sidebar2 .sidebar2-6{font-size:15px;}
+.sidebar3 .sidebar3-1{font-size:16px; font-family:'微软雅黑';}
+.sidebar3 .sidebar3-2{font-size:13px; font-family:'微软雅黑'; color:#333; width:248px; height:45px; line-height:45px; border-bottom:1px solid #ccc;
+					  background:url(img/18.jpg) no-repeat 239px 17px;}
+.sidebar3 .sidebar3-3{font-size:13px; font-family:'微软雅黑'; color:#333; width:248px; height:45px; line-height:45px; border-bottom:1px solid #ccc;
+                       background:url(img/18.jpg) no-repeat 239px 17px;}
+.sidebar3 .sidebar3-4{font-size:13px; font-family:'微软雅黑'; color:#333; width:248px; height:45px; line-height:45px; border-bottom:1px solid #ccc;
+                       background:url(img/18.jpg) no-repeat 239px 17px;}
+.sidebar3 .sidebar3-5{font-size:13px; font-family:'微软雅黑'; color:#333; width:248px; height:45px; line-height:45px;
+                       background:url(img/18.jpg) no-repeat 239px 17px;}
+
+/*大家都喜欢*/
+.love{width:930px; height:35px; margin:0 auto;}
+.love p{width:90px; font-size:17px; font-family:'微软雅黑'; margin-top:30px;}
+.lovebox{width:930px; height:619px; margin:0 auto;}
+.lovebox .lovebox1{width:620px; height:620px; float:left;}
+.lovebox .lovebox2{width:308px; height:620px; float:left;}
+.lovebox .lovebox1 .lovebox3{width:619px; height:311px; border-top:1px solid #ccc; border-left:1px solid #ccc;}
+.lovebox .lovebox1 .lovebox4{width:619px; height:314px; margin-top:-3px;}
+.lovebox .lovebox1 .lovebox4 .lovebox5{width:279px; height:279px; border:1px solid #ccc; border-right:0; float:left; padding-top:35px; padding-left:30px;
+									  font-size:14px; line-height:22px;}
+.lovebox .lovebox1 .lovebox4 .lovebox5 img{margin-top:15px; margin-left:-30px;}
+.lovebox .lovebox1 .lovebox4 .lovebox6{width:278px; height:279px; border:1px solid #ccc; border-right:0; float:left; padding-top:35px; padding-left:30px;
+									  font-size:14px; line-height:22px;}
+.lovebox .lovebox1 .lovebox4 .lovebox6 img{margin-top:15px; margin-left:-30px;}
+.lovebox2 .lovebox2-0 .lovebox2-2{width:278px; height:63px; border:1px solid #ccc; border-bottom:0;}
+.lovebox2 .lovebox2-0 .lovebox2-3{width:308px; height:103px; border:1px solid #ccc; border-bottom:0;}
+.lovebox2 .lovebox2-0 .lovebox2-4{width:308px; height:103px; border:1px solid #ccc; border-bottom:0;}
+.lovebox2 .lovebox2-0 .lovebox2-5{width:308px; height:105px; border:1px solid #ccc; border-bottom:0;}
+.lovebox2 .lovebox2-0 .lovebox2-6{width:308px; height:105px; border:1px solid #ccc; border-bottom:0;}
+.lovebox2 .lovebox2-0 .lovebox2-7{width:308px; height:103px; border:1px solid #ccc;}
+.lovebox .lovebox1 .lovebox3 .lovebox3-1{margin-left:30px; float:left;}
+.lovebox .lovebox1 .lovebox3 .lovebox3-1 .lovebox3-1-1{font-size:34px; color:#333; font-family:'微软雅黑'; margin-top:60px;}
+.lovebox .lovebox1 .lovebox3 .lovebox3-1 .lovebox3-1-2{font-size:14px; color:#6d6d6d; font-family:'微软雅黑'; margin-top:10px;}
+.lovebox .lovebox1 .lovebox3 .lovebox3-1 .lovebox3-1-3{font-size:20px; color:#333; font-family:'微软雅黑'; margin-top:28px;}
+.lovebox .lovebox1 .lovebox3 .lovebox3-2 {float:left;}
+.lovebox2 .lovebox2-0 .lovebox2-2{font-size:24px; font-family:'微软雅黑'; padding-top:40px; padding-left:30px;}
+.lovebox2 .lovebox2-0 .lovebox2-2 span{color:#ff4a00;}
+.lovebox2 .lovebox2-0 .lovebox2-3 .lovebox2-3-1{font-size:30px; font-family:'微软雅黑'; color:#ff4a00; float:left; margin-top:30px; margin-left:32px;}
+.lovebox2 .lovebox2-0 .lovebox2-3 .lovebox2-3-2{font-size:12px; font-family:'微软雅黑'; line-height:20px; float:left; margin-top:30px; margin-left:20px;}
+.lovebox2 .lovebox2-0 .lovebox2-3 img{float:right;}
+.lovebox2 .lovebox2-0 .lovebox2-7 .lovebox2-3-1{font-size:30px; font-family:'微软雅黑'; color:#666; float:left; margin-top:30px; margin-left:32px;}
+.lovebox2 .lovebox2-0 .lovebox2-7 .lovebox2-3-2{font-size:12px; font-family:'微软雅黑'; line-height:20px; float:left; margin-top:30px; margin-left:20px;}
+.lovebox2 .lovebox2-0 .lovebox2-7 img{float:right;}
+.lovebox2 .lovebox2-0 .lovebox2-6 .lovebox2-3-1{font-size:30px; font-family:'微软雅黑'; color:#666; float:left; margin-top:30px; margin-left:32px;}
+.lovebox2 .lovebox2-0 .lovebox2-6 .lovebox2-3-2{font-size:12px; font-family:'微软雅黑'; line-height:20px; float:left; margin-top:30px; margin-left:20px;}
+.lovebox2 .lovebox2-0 .lovebox2-6 img{float:right;}
+/*热评产品*/
+.redmi{width:930px; height:412px; margin:0 auto;}
+.redmi .redmi1{width:309px; height:410px; border:1px solid #ccc; float:left;}
+.redmi .redmi2{width:309px; height:410px; border:1px solid #ccc; border-left:0; float:left;}
+.redmi .redmi3{width:308px; height:410px; border:1px solid #ccc; border-left:0; float:left;}
+.redmi .redmi1 .redmi1-1{font-size:14px; font-family:'微软雅黑'; color:#333; margin-top:32px; margin-left:32px;}
+.redmi .redmi1 .redmi1-2{font-size:12px; font-famil:'微软雅黑'; color:#666; margin-left:32px; background:url(img/xx.jpg) no-repeat; padding-left:83px;
+						 color:#CCC;}
+.redmi .redmi1 .redmi1-3{font-size:14px; font-family:'微软雅黑'; color:#333; margin-left:32px;}
+.redmi .redmi1 img{padding-left:57px; padding-top:70px;}
+.redmi .redmi1 .redmi1-4{width:289px; height:45px; background:#CCC; margin:0 auto; font-size:12px; font-family:'微软雅黑'; padding-top:10px}
+.redmi .redmi1 .redmi1-4 p{color:#666;}
+
+.redmi .redmi2 .redmi1-1{font-size:14px; font-family:'微软雅黑'; color:#333; margin-top:32px; margin-left:32px;}
+.redmi .redmi2 .redmi1-2{font-size:12px; font-famil:'微软雅黑'; color:#666; margin-left:32px; background:url(img/xx2.jpg) no-repeat; padding-left:83px;
+						 color:#CCC;}
+.redmi .redmi2 .redmi1-3{font-size:14px; font-family:'微软雅黑'; color:#333; margin-left:32px;}
+.redmi .redmi2 img{padding-left:57px; padding-top:70px;}
+.redmi .redmi2 .redmi1-4{width:289px; height:45px; background:#CCC; margin:0 auto; font-size:12px; font-family:'微软雅黑'; padding-top:10px}
+.redmi .redmi2 .redmi1-4 p{color:#666;}
+
+.redmi .redmi3 .redmi1-1{font-size:14px; font-family:'微软雅黑'; color:#333; margin-top:32px; margin-left:32px;}
+.redmi .redmi3 .redmi1-2{font-size:12px; font-famil:'微软雅黑'; color:#666; margin-left:32px; background:url(img/xx.jpg) no-repeat; padding-left:83px;
+						 color:#CCC;}
+.redmi .redmi3 .redmi1-3{font-size:14px; font-family:'微软雅黑'; color:#333; margin-left:32px;}
+.redmi .redmi3 img{padding-left:57px; padding-top:70px;}
+.redmi .redmi3 .redmi1-4{width:289px; height:45px; background:#CCC; margin:0 auto; font-size:12px; font-family:'微软雅黑'; padding-top:10px}
+.redmi .redmi3 .redmi1-4 p{color:#666;}
+
+.reping{width:930px; height:65px; margin:0 auto; margin-top:8px; line-height:65px; font-size:17px; color:333; font-family:'微软雅黑';}
+
+/*特价介绍*/
+.offer{width:930px; height:35px; margin:0 auto; margin-top:20px;}
+.offer .offer0{font-size:18px; font-family:'微软雅黑'; color:#333; }
+.offer1{width:930px; height:311px; margin:0 auto;}
+.offer1 .offer1-1{width:309px; height:309px; border:1px solid #ccc; border-right:0; float:left;}
+.offer1 .offer1-1 .offer1-1-1{font-size:12px; background:#f32f39; color:#fff; width:70px; height:20px; line-height:20px; text-align:center; font-family:'w                               微软雅黑'; margin-left:215px;}
+.offer1 .offer1-1 .offer1-1-2{font-size:13px; margin-top:14px; margin-left:30px;}
+.offer1 .offer1-1 .offer1-1-3{font-size:13px; margin-left:30px;}
+.offer1 .offer1-1 .offer1-1-3 .offer1-1-4{color:#999; text-decoration:line-through;}
+.offer1 .offer1-1  img{margin-left:64px; margin-top:40px;}
+
+.offer1 .offer1-2{width:309px; height:309px; border:1px solid #ccc; border-right:0; float:left;}
+.offer1 .offer1-2 .offer1-1-1{font-size:12px; background:#f32f39; color:#fff; width:70px; height:20px; line-height:20px; text-align:center; font-family:'w                               微软雅黑'; margin-left:215px;}
+.offer1 .offer1-2 .offer1-1-2{font-size:13px; margin-top:14px; margin-left:30px;}
+.offer1 .offer1-2 .offer1-1-3{font-size:13px; margin-left:30px;}
+.offer1 .offer1-2 .offer1-1-3 .offer1-1-4{color:#999; text-decoration:line-through;}
+.offer1 .offer1-2  img{margin-left:64px; margin-top:40px;}
+
+.offer1 .offer1-3{width:308px; height:309px; border:1px solid #ccc; float:left;}
+.offer1 .offer1-3 .offer1-1-1{font-size:12px; background:#f32f39; color:#fff; width:70px; height:20px; line-height:20px; text-align:center; font-family:'w                               微软雅黑'; margin-left:215px;}
+.offer1 .offer1-3 .offer1-1-2{font-size:13px; margin-top:14px; margin-left:30px;}
+.offer1 .offer1-3 .offer1-1-3{font-size:13px; margin-left:30px;}
+.offer1 .offer1-3 .offer1-1-3 .offer1-1-4{color:#999; text-decoration:line-through;}
+.offer1 .offer1-3  img{margin-left:64px; margin-top:40px;}
+
+/*多看图书*/
+.book{width:930px; height:17px; margin:0 auto; maigin-top:}
+.book .booky{float:left; width:100px; padding-top:31px; padding-bottom:17px;}
+.book .bookz{float:right; width:40px; padding-top:31px; padding-bottom:17px;}
+.bookbox{width:930px; height:412px; margin:0 auto; margin-top:50px;}
+.bookbox .bookbox-1{width:309px; height:410px; border:1px solid #ccc; border-right:0; float:left;}
+.bookbox .bookbox-1 .bookbox-1-1{font-size:14px; color:#666; margin:35px 0 0 30px;}
+.bookbox .bookbox-1 .bookbox-1-2{font-size:14px; color:#666; margin:7px 0 0 30px;}
+.bookbox .bookbox-1 .bookbox-1-3{font-size:14px; color:#666; margin:7px 0 0 30px;}
+.bookbox .bookbox-1 img{margin:32px 0 0 82px;}
+.bookbox .bookbox-1 .bookbox-1-4{width:275px; height:37px; background:#f3f3f3; margin-top:10px; margin-left:10px; float:left; font-size:12px;
+								color:#999; padding-left:15px; padding-top:13px;}
+
+
+.bookbox .bookbox-2{width:309px; height:410px; border:1px solid #ccc; border-right:0; float:left;}
+.bookbox .bookbox-2 .bookbox-2-1{font-size:14px; color:#666; margin:35px 0 0 30px;}
+.bookbox .bookbox-2 .bookbox-2-2{font-size:14px; color:#666; margin:7px 0 0 30px;}
+.bookbox .bookbox-2 .bookbox-2-3{font-size:14px; color:#666; margin:7px 0 0 30px;}
+.bookbox .bookbox-2 img{margin:32px 0 0 82px;}
+.bookbox .bookbox-2 .bookbox-2-4{width:275px; height:37px; background:#f3f3f3; margin-top:10px; margin-left:10px; float:left; font-size:12px;
+								color:#999; padding-left:15px; padding-top:13px;}
+
+.bookbox .bookbox-3{width:308px; height:410px; border:1px solid #ccc; float:left;}
+.bookbox .bookbox-3 .bookbox-3-1{font-size:14px; color:#666; margin:35px 0 0 30px;}
+.bookbox .bookbox-3 .bookbox-3-2{font-size:14px; color:#666; margin:7px 0 0 30px;}
+.bookbox .bookbox-3 .bookbox-3-3{font-size:14px; color:#666; margin:7px 0 0 30px;}
+.bookbox .bookbox-3 img{margin:32px 0 0 82px; display:block;}
+.bookbox .bookbox-3 .bookbox-3-4{width:275px; height:37px; background:#f3f3f3; margin-top:10px; margin-left:10px; float:left; font-size:12px;
+								color:#999; padding-left:15px; padding-top:13px;}
+
+/*MIUI主题*/
+.miui{width:930px; height:17px; margin:0 auto; maigin-top:}
+.miui .miuiy{float:left; width:100px; padding-top:31px; padding-bottom:17px;}
+.miui .miuiz{float:right; width:40px; padding-top:31px; padding-bottom:17px;}
+.miuibox{width:930px; height:335px; margin:0 auto; margin-top:50px;}
+.miuibox .miuibox-1{width:309px; height:335px; border:1px solid #ccc; border-right:0; float:left;}
+.miuibox .miuibox-1 .miuibox-1-1{font-size:12px; margin:32px 0 0 34px;}
+.miuibox .miuibox-1 .miuibox-1-2{font-size:12px; margin:5px 0 0 34px;}
+.miuibox .miuibox-1 img{margin:35px 0 0 30px;}
+
+.miuibox .miuibox-2{width:309px; height:335px; border:1px solid #ccc; border-right:0; float:left;}
+.miuibox .miuibox-2 .miuibox-2-1{font-size:12px; margin:32px 0 0 34px;}
+.miuibox .miuibox-2 .miuibox-2-2{font-size:12px; margin:5px 0 0 34px;}
+.miuibox .miuibox-2 img{margin:35px 0 0 30px;}
+
+.miuibox .miuibox-3{width:308px; height:335px; border:1px solid #ccc; float:left;}
+.miuibox .miuibox-3 .miuibox-3-1{font-size:12px; margin:32px 0 0 34px;}
+.miuibox .miuibox-3 .miuibox-3-2{font-size:12px; margin:5px 0 0 34px;}
+.miuibox .miuibox-3 img{margin:35px 0 0 30px;}
+/*尾部*/
+.footer{width:100%; height:535px; margin:0 auto; background:url(img/22.jpg); margin-top:65px;}
+.footer1{width:930px; height:154px; margin:0 auto;}
+.footer1 .foot{font-size:15px; font-family:'微软雅黑'; text-align:center; padding-top:95px;}
+.footer1 .footer1-1{width:186px; height:59px; border-bottom:1px solid #ccc; background:url(img/2-1.jpg) no-repeat center 40px; float:left;}
+.footer1 .footer1-2{width:186px; height:59px; border-bottom:1px solid #ccc; background:url(img/2-2.jpg) no-repeat center 40px; float:left;}
+.footer1 .footer1-3{width:186px; height:59px; border-bottom:1px solid #ccc; background:url(img/2-3.jpg) no-repeat center 40px; float:left;}
+.footer1 .footer1-4{width:186px; height:59px; border-bottom:1px solid #ccc; background:url(img/2-4.jpg) no-repeat center 40px; float:left;}
+.footer1 .footer1-5{width:186px; height:59px; border-bottom:1px solid #ccc; background:url(img/2-5.jpg) no-repeat center 40px; float:left;}
+
+.footer2{width:930px; height:198px; margin:0 auto;}
+.footer2 .footer2-1{width:148px; height:138px; border-bottom:1px solid #ccc; padding:40px 0 30px 0; float:left;}
+.footer2 .footer2-1 h3{font-size:17px; font-family:'微软雅黑'; padding-left:20px; border-right:1px solid #ccc;}
+.footer2 .footer2-1 p{font-size:12px; font-family:'微软雅黑'; padding-left:20px; padding-top:15px; border-right:1px solid #ccc;}
+
+.footer2 .footer2-6{width:185px; height:138px; border-bottom:1px solid #ccc; padding:40px 0 30px 0; float:left;}
+.footer2 .footer2-6 .tel{font-size:20px; font-family:'微软雅黑'; padding-left:20px; text-align:center;}
+.footer2 .footer2-6 .tel-1{font-size:12px; font-family:'微软雅黑'; padding-left:20px; padding-top:15px; text-align:center;}
+.footer2 .footer2-6 .tel-2{width:120px; height:30px; font-size:12px; font-family:'微软雅黑'; text-align:center; line-height:35px; color:#fff; background:#ff4a00; margin-left:35px; margin-top:15px;}
+
+.footer-nav{width:930px; height:50px; margin:0 auto; margin-top:-140px;}
+.footer-nav .footer-nav-z{width:700px; height:50px; float:left;}
+.footer-nav .footer-nav-y{width:190px; height:38px; float:right; border:1px solid #ccc; background:url(img/dd.jpg) no-repeat 180px 16px #fff; color:#999; line-height:38px; padding-left:10px;}
+.footer-nav .footer-nav-z li{font-size:12px; float:left; padding:0 5px; border-right:1px solid #ccc;}
+.footer-nav .footer-nav-z .lopo{border:0;}
+.footer-nav .footer-nav-z .jing{border:0; margin-top:5px;}
+
+.ditu{width:930px; height:20px; margin:0 auto; background:url(img/111.jpg) no-repeat; margin-top:10px;}
+</style>
+</head>
+
+<body>
+<!--顶部代码-->
+	<div class="top">
+    	<ul class="top1 clearfix">
+        	<li><a href="#" class="top8">小米网</a></li>
+            <li><a href="#">MUI</a></li>
+            <li><a href="#">米聊</a></li>
+            <li><a href="#">游戏</a></li>
+            <li><a href="#">多看阅读</a></li>
+            <li><a href="#">云服务</a></li>
+            <li><a href="#">小米网移动版</a></li>
+            <li><a href="#" class="top2">Selectregion</a></li>
+            <ul>
+        	<li><a href="#" class="top4">注册</a></li>
+            <li><a href="#" class="top3">登陆</a></li>
+        </ul>
+        </ul>
+    </div>
+    <div class="beader clearfix">
+    	<h1><a href="#">小米</a></h1>
+        <p class="beader-1">&nbsp;&nbsp;11月18日预约开放购买</p>
+        <div clearfix>
+        <div class="beader-3"></div>
+        <div class="beader-4"></div>
+        </div>
+    </div>
+    <div class="nav clearfix">
+    <div class="nav1">全部商品分类</div>
+    <div class="nav2">
+    	<ul class="navbox clearfix">
+        	<li>首页</li>
+            <li>小米手机</li>
+            <li>红米</li>
+            <li>小米平板</li>
+            <li>小米电视</li>
+            <li>盒子</li>
+            <li>路由器</li>
+            <li>合约机</li>
+            <li>服务</li>
+            <li>社区</li>
+            
+        </ul>
+    </div>
+    </div>
+   <!-- ===============================================================-->
+   <div class="content-box clearfix">
+   <div class="content">
+    	<dl class="content-1 clearfix">
+         	<dt>购买手机</dt>
+            <dd>小米4</dd>
+            <dd>小米3</dd>
+            <dd>红米</dd>
+            <dd>红米Note</dd>
+        </dl>
+        <dl class="content-1 clearfix">
+         	<dt>购买电视与平板</dt>
+            <dd>小米电视</dd>
+            <dd>小米盒子</dd>
+            <dd>小米平板</dd>
+        </dl>
+        <dl class="content-1 clearfix">
+         	<dt>后盖与个性化配件</dt>
+            <dd>米键</dd>
+            <dd>后盖</dd>
+            <dd>贴纸</dd>
+            <dd>手机支架Note</dd>
+        </dl>
+        <dl class="content-1 clearfix">
+         	<dt>保护套与贴膜</dt>
+            <dd>保护套/保护膜</dd>
+            <dd>贴膜</dd>
+            <dd>防尘塞</dd>
+        </dl>
+        <dl class="content-1 clearfix">
+         	<dt>移动电源与电池</dt>
+            <dd>小米移动电源</dd>
+            <dd>电池</dd>
+            <dd>充电器</dd>
+        </dl>
+        <dl class="content-1 clearfix">
+         	<dt>路由器与智能家庭</dt>
+            <dd>小米4</dd>
+            <dd>小米3</dd>
+            <dd>红米</dd>
+            <dd>红米Note</dd>
+        </dl>
+        <dl class="content-1 clearfix">
+         	<dt>耳机与音响</dt>
+            <dd>小米4</dd>
+            <dd>小米3</dd>
+            <dd>红米</dd>
+            <dd>红米Note</dd>
+        </dl>
+        <dl class="content-1 clearfix">
+         	<dt>小米生活方式</dt>
+            <dd>小米4</dd>
+            <dd>小米3</dd>
+            <dd>红米</dd>
+            <dd>红米Note</dd>
+        </dl>
+   </div>
+   <div class="content-2">
+   		<div class="content-3"></div>
+        <div class="content-4">
+       		 <div class="content-5">
+             	<p class="content-8">红米4G手机 现货购买</p>
+                <p class="content-9">可选红米1S、红米Note</p>
+                <span class="content-10"><img src="img/5.jpg" /></span>
+             </div>
+             <div class="content-6">
+             	<p class="content-8">红米4G手机 现货购买</p>
+                <p class="content-9">可选红米1S、红米Note</p>
+                <span class="content-10"><img src="img/5.jpg" /></span>
+             </div>
+             <div class="content-7">
+             <p class="content-8">红米4G手机 现货购买</p>
+                <p class="content-9">可选红米1S、红米Note</p>
+                <span class="content-10"><img src="img/5.jpg" /></span>
+             </div>
+        </div>
+   </div>
+   </div>
+   <!--===============================================================================-->
+   <div class="column clearfix">
+   		<h2 class="column-h clearfix">小米明星单品 <span class="column-h1">根据机型选择配件</span></h2>
+        <div class="column-h2">
+        <a href="#"><div class="column-h3"></div></a>
+        <a href="#"><div class="column-h4"></div></a>
+        </div>
+   </div>
+   <div class="main clearfix">
+   		<div class="main1">
+        	<img src="img/10.jpg" />
+        	<p class="main4">10400mAh小米移动电源</p>
+            <p class="main5">金铝合金金属外壳，LG/三星等优质电芯源</p>
+        </div>
+        <div class="main1">
+        <img src="img/1111.jpg" />
+        	<p class="main6">10400mAh小米移动电源</p>
+            <p class="main7">金铝合金金属外壳，LG/三星等优质电芯源</p>
+        </div>
+        <div class="main1">
+        <img src="img/2222.jpg" />
+        	<p class="main8">10400mAh小米移动电源</p>
+            <p class="main9">金铝合金金属外壳，LG/三星等优质电芯源</p>
+        </div>
+   </div>
+   <div class="new clearfix">
+   		<h2 class="new1">新品上架</h2>
+        <h2 class="new2">更多></h2>
+   </div>
+<div class="new-contentbox clearfix">
+   <div class="new-content">
+   		<div class="new-content-2">
+        	<div class="fumobox"><h2>iHealth智能血压计</h2>
+            <p class="fumu">父母在家一点就测 测量结果云端同步</p>
+            <p class="fumu2">199元</p></div>
+            <span class="fumu3"><img src="img/11.jpg"/></span>
+        </div>
+        <!---------------------------------------->
+         <div class="new-content-3 clearfix">
+         	<div class="new-content-4">
+            	<p class="by">包邮</p>
+                <p class="by-1">大人物米兔圆领套头卫衣</p>
+                <p class="by-2">99元<span>129元</span></p>
+                <img src="img/12.jpg"/>
+            </div>
+            <div class="new-content-5">
+            <p class="qcy">QCY运动蓝牙耳机<br />129元</p>
+           <img src="img/13.jpg"/>
+            </div>
+            <div class="new-content-6">
+            <p class="xmsj">小米手机二合一镜头<br />59元</p>
+            <img src="img/14.jpg"/>
+            </div>
+         </div>
+         <!---------------------------------------->
+         <div class="new-content-7">
+         	<div class="new-content-8">
+            	<p class="new-content-10">铁三角CLR100耳机<br />118元</p>
+                <img src="img/15.jpg"/>
+            </div>
+            <div class="new-content-9">
+            <p class="new-content-11">红米至简翻盖保护套<br />49元</p>
+             <img src="img/16.jpg"/>
+            </div>
+         </div>
+   </div>
+    <!---------------------------------------->
+    <!--新品上架-->
+   <div class="new-content-1">
+   	<ul class="sidebar">
+    	<li>
+        	<p class="sidebar-1">特价秒杀</p>
+            <p class="sidebar-2">红米3D月球系列...</p>
+            <p class="sidebar-3">29元<span>39元</span></p>
+            <p class="sidebar-4">上午十点开始秒杀</p>
+            <img src="img/17.jpg"/>
+        </li>
+    </ul>
+    <ul class="sidebar1">	<li>
+            <p class="sidebar-2">红米3D月球系列...</p>
+            <p class="sidebar-3">29元39元</p>
+            <p class="sidebar-4">上午十点开始秒杀</p>
+            <img src="img/17.jpg"/>
+        </li>
+        </ul>
+    <ul class="sidebar1"><li>
+            <p class="sidebar-2">红米3D月球系列...</p>
+            <p class="sidebar-3">29元39元</p>
+            <p class="sidebar-4">上午十点开始秒杀</p>
+            <img src="img/17.jpg"/>
+        </li></ul>
+    <ul class="sidebar2">
+    	<li>
+        	<p class="sidebar2-1">话费充值</p>
+            <div class="sidebar2-2">请输入手机号码</div>
+            <div class="sidebar2-3">100元</div>
+            <p class="sidebar2-4">实付价格：<span class="sidebar2-6">98.4</span>元起</p>
+            <div><a href="#" class="sidebar2-5">立即充值</a></div>
+        </li>
+    </ul>
+    <ul class="sidebar3">
+    	<li class="sidebar3-1">新闻公告</li>
+        <li class="sidebar3-2">· 企业用户采购通道</li>
+        <li class="sidebar3-3">· 企业用户采购通</li>
+        <li class="sidebar3-4">· 企业用户采购通</li>
+        <li class="sidebar3-5">· 企业用户采购通</li>
+    </ul>
+   </div>
+</div>
+<!--大家都喜欢-->
+   <div class="love"><p>大家都喜欢</p></div>
+   <div class="lovebox clearfix">
+   		<div class="lovebox1">
+        	<div class="lovebox3 clearfix">
+            	<div class="lovebox3-1">
+                	<p class="lovebox3-1-1">小米T恤换季特卖</p>
+                    <p class="lovebox3-1-2">舒适纯棉料 多色经典图案</p>
+                    <p class="lovebox3-1-3">全场29元</p>
+                </div>
+                <div class="lovebox3-2"><img src="img/19.jpg"/></div>
+            </div>
+            <div class="lovebox4 clearfix">
+            	<div class="lovebox5"><p>先锋SE-MJ512折叠式头戴耳机<br />168元</p>
+                					<img src="img/20.jpg"/>
+                </div>
+                <div class="lovebox6"><p>红米高透防划贴膜（单片装）<br />9.9元</p>
+                					<img src="img/21.jpg"/>
+                </div>
+            </div>
+        </div>
+        <div class="lovebox2">
+        	<ol class="lovebox2-0">
+            	<li class="lovebox2-2"><span>HOT</span>热销商品排行</li>
+                <li class="lovebox2-3 clearfix">
+                		<p class="lovebox2-3-1">1</p>
+                        <p class="lovebox2-3-2">5200mAh移动电源<br />49元</p>
+                        <img src="img/1-1.jpg"/>
+                </li>
+                <li class="lovebox2-3">
+                    	<p class="lovebox2-3-1">2</p>
+                        <p class="lovebox2-3-2">5200mAh移动电源<br />49元</p>
+                        <img src="img/1-1.jpg"/>
+                </li>
+                <li class="lovebox2-3">
+                    	<p class="lovebox2-3-1">3</p>
+                        <p class="lovebox2-3-2">5200mAh移动电源<br />49元</p>
+                        <img src="img/1-1.jpg"/>
+                </li>
+                <li class="lovebox2-6">
+                    	<p class="lovebox2-3-1">4</p>
+                        <p class="lovebox2-3-2">5200mAh移动电源<br />49元</p>
+                        <img src="img/1-4.jpg"/>
+                </li>
+                <li class="lovebox2-7">
+                    	<p class="lovebox2-3-1">5</p>
+                        <p class="lovebox2-3-2">5200mAh移动电源<br />49元</p>
+                        <img src="img/1-5.jpg"/>
+                </li>
+            </ol>
+        </div>
+   </div>
+<!--   热评产品-->
+   <div class="reping"><p>热评产品</p></div>
+   <div class="redmi">
+   		<div class="redmi1">
+        		<p class="redmi1-1">红米色彩主题后盖</p>
+                <p class="redmi1-2">1231人好评</p>
+                <p class="redmi1-3">39元</p>
+                <img src="img/hm.jpg"/>
+                <div class="redmi1-4"><p>&nbsp;&nbsp;&nbsp;&nbsp;后盖图案非常漂亮，不会是官方出品，和机型严<br />&nbsp;&nbsp;&nbsp;&nbsp;丝合缝很赞！</p></div>
+        </div>
+        <div class="redmi2">
+        <p class="redmi1-1">红米色彩主题后盖</p>
+                <p class="redmi1-2">1231人好评</p>
+                <p class="redmi1-3">39元</p>
+                <img src="img/hm1.jpg"/>
+                <div class="redmi1-4"><p>&nbsp;&nbsp;&nbsp;&nbsp;后盖图案非常漂亮，不会是官方出品，和机型严<br />&nbsp;&nbsp;&nbsp;&nbsp;丝合缝很赞！</p></div>
+        </div>
+        <div class="redmi3">
+        <p class="redmi1-1">红米色彩主题后盖</p>
+                <p class="redmi1-2">1231人好评</p>
+                <p class="redmi1-3">39元</p>
+                <img src="img/qb.jpg"/>
+                <div class="redmi1-4"><p>&nbsp;&nbsp;&nbsp;&nbsp;后盖图案非常漂亮，不会是官方出品，和机型严<br />&nbsp;&nbsp;&nbsp;&nbsp;丝合缝很赞！</p></div>
+        </div>
+   </div>
+<!--特价介绍-->
+<div class="offer"><p class="offer0">特价介绍</p></div>
+<div class="offer1 clearfix">
+	<div class="offer1-1">
+    <p class="offer1-1-1">省20元</p>
+    <P class="offer1-1-2">SanDisk 32GB存储卡（Class4)</P>
+    <p class="offer1-1-3">89元 <span class="offer1-1-4">109元</span></p>  
+    <img src="img/33.jpg"/>  	
+    </div>
+    <div class="offer1-2">
+    <p class="offer1-1-1">省20元</p>
+    <P class="offer1-1-2">SanDisk 32GB存储卡（Class4)</P>
+    <p class="offer1-1-3">89元 <span class="offer1-1-4">109元</span></p>  
+    <img src="img/32.jpg"/> 
+    </div>
+    <div class="offer1-3">
+    <p class="offer1-1-1">省20元</p>
+    <P class="offer1-1-2">SanDisk 32GB存储卡（Class4)</P>
+    <p class="offer1-1-3">89元 <span class="offer1-1-4">109元</span></p>  
+    <img src="img/31.jpg"/> 
+    </div>
+</div>
+<!--多看图书-->
+<div class="book clearfix"><p class="booky">多看图书</p>
+			      <p><a href="#" class="bookz">更多></a></p>
+</div>
+<div class="bookbox clearfix">
+		<div class="bookbox-1">
+        <p class="bookbox-1-1">《参与感：小米口碑营销内部手册》</p>
+        <p class="bookbox-1-2">黎万强（小米联合创始人）</p>
+        <p class="bookbox-1-3">9.99元</p>
+        <img src="img/book.jpg"/>
+        <p class="bookbox-1-4">这是阿黎在小米四年的工作笔记，雷军亲笔<br />作序。</p>
+        </div>
+        <div class="bookbox-2">
+        <p class="bookbox-2-1">《参与感：小米口碑营销内部手册》</p>
+        <p class="bookbox-2-2">黎万强（小米联合创始人）</p>
+        <p class="bookbox-2-3">9.99元</p>
+        <img src="img/book2.jpg"/>
+        <p class="bookbox-2-4">这是阿黎在小米四年的工作笔记，雷军亲笔<br />作序。</p>
+        </div>
+        <div class="bookbox-3">
+        <p class="bookbox-3-1">《参与感：小米口碑营销内部手册》</p>
+        <p class="bookbox-3-2">黎万强（小米联合创始人）</p>
+        <p class="bookbox-3-3">9.99元</p>
+        <img src="img/book3.jpg"/>
+        <p class="bookbox-3-4">这是阿黎在小米四年的工作笔记，雷军亲笔<br />作序。</p>
+        </div>
+</div>
+<!--MIUI主题-->
+<div class="miui clearfix"><p class="miuiy">MIUI 主题</p>
+			      <p><a href="#" class="miuiz">更多></a></p></div>
+                  
+<div class="miuibox clearfix">
+		<div class="miuibox-1">
+        <p class="miuibox-1-1">光棍节想脱单吗：告白字体0元起</p>
+        <p class="miuibox-1-2">6米币</p>
+        <img src="img/h.jpg"/>
+        </div>
+        <div class="miuibox-2">
+        <p class="miuibox-2-1">光棍节想脱单吗：告白字体0元起</p>
+        <p class="miuibox-2-2">6米币</p>
+        <img src="img/h2.jpg"/>
+        </div>
+        <div class="miuibox-3">
+        <p class="miuibox-3-1">光棍节想脱单吗：告白字体0元起</p>
+        <p class="miuibox-3-2">6米币</p>
+        <img src="img/h3.jpg"/>
+        </div>
+        </div>
+<!--尾部-->
+<div class="footer">
+	<ol class="footer1 clearfix">
+    	<li class="footer1-1 foot"><p>1小时快修服务</p></li>
+        <li class="footer1-2 foot"><p>7天无理由退货</p></li>
+        <li class="footer1-3 foot"><p>15天免费换货</p></li>
+        <li class="footer1-4 foot"><p>满150元包邮</p></li>
+        <li class="footer1-5 foot"><p>520余家售后网点</p></li>
+    </ol>
+    <ol class="footer2">
+    	<li class="footer2-1">
+        	<div>
+            <h3>帮助中心</h3>
+            <p>购物指南</p>
+            <p>支付方式</p>
+            <p>配送方式</p>
+            </div>
+        </li>
+        <li class="footer2-1">
+        	<div>
+            <h3>帮助中心</h3>
+            <p>购物指南</p>
+            <p>支付方式</p>
+            <p>配送方式</p>
+            </div>
+        </li>
+        <li class="footer2-1">
+        	<div>
+            <h3>帮助中心</h3>
+            <p>购物指南</p>
+            <p>支付方式</p>
+            <p>配送方式</p>
+            </div>
+        </li>
+        <li class="footer2-1">
+        	<div>
+            <h3>帮助中心</h3>
+            <p>购物指南</p>
+            <p>支付方式</p>
+            <p>配送方式</p>
+            </div>
+        </li>
+        <li class="footer2-1">
+        	<div>
+            <h3>帮助中心</h3>
+            <p>购物指南</p>
+            <p>支付方式</p>
+            <p>配送方式</p>
+            </div>
+        </li>
+        <li class="footer2-6">
+        	<div>
+            <p class="tel">400-100-5678</p>
+            <p class="tel-1">周一至周日8:00-18:00<br />仅收市话费）</p>
+            <p class="tel-2">24小时在线客服</p>
+            </div>
+        </li>
+    </ol>
+</div>
+	<div class="footer-nav">
+    	<div class="footer-nav-z">
+        	<ol class="clearfix">
+            	<li>小米旗下网站：小米网</li>
+                <li>MIUI</li>
+                <li>米聊</li>
+                <li>多看书城</li>
+                <li>小米路由器</li>
+                <li>香港香港</li>
+                <li>台湾台湾</li>
+                <li>English</li>
+                <li>小米后院</li>
+                <li>小米天猫店</li>
+                <li class="lopo">小米网盟</li>
+                <li class="jing">京公安网备案82828282911010229290号经过91910号认证</li>
+                
+            </ol>
+        </div>
+        <div><a href="#" class="footer-nav-y">简体中文</a></div>
+    </div>
+    <div class="ditu"></div>
+ 
+                  
+
+</body>
+</html>

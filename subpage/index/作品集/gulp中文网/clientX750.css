@@ -1,0 +1,27 @@
+.top-box .nav{
+    width:750px;
+}
+.nav .list{
+   display:none;
+
+}
+.top-box .nav{
+    border:none;
+}
+.content{
+    width:750px;
+    padding:15px 0;
+    margin:40px auto;
+}
+.content .con-top .l{
+    width:100%;
+}
+.content .con-top .r{
+    width:100%;
+}
+.content .con-bottom .l{
+    width:100%;
+}
+.content .con-bottom .r{
+    width:100%;
+}

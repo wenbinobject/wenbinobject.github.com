@@ -1,0 +1,89 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>3D盒子</title>
+<style>
+*{margin:0; padding:0;}
+.box{ width:300px; height:300px;  margin:100px auto; position:relative; -webkit-transform-style:preserve-3d; -webkit-transform:perspective(800px) rotateX(0deg) rotateY(0deg);}
+.box div{ position:absolute; top:0; left:0; text-align:center; line-height:300px; width:100%; height:100%; font-size:50px;}
+.box .front{ background:rgba(0,255,255,0.3); -webkit-transform:translateZ(150px);}
+.box .back{ background:rgba(255,0,0,0.3); -webkit-transform:translateZ(-150px);}
+.box .left{ background:rgba(0,255,0,0.3); -webkit-transform:translate(-150px,0) rotateY(-90deg);}
+.box .right{ background:rgba(0,0,255,0.3); -webkit-transform:translate(150px,0) rotateY(90deg);}
+.box .top{ background:rgba(255,255,0,0.3); -webkit-transform:translate(0,-150px) rotateX(90deg);}
+.box .bottom{ background:rgba(255,0,255,0.3); -webkit-transform:translate(0,150px) rotateX(-90deg);}
+</style>
+<script>
+window.onload=function(){
+	var oBox = document.querySelector('.box');
+	
+	var x = 0;
+	var y = 0;
+	var iSpeedX = 0;
+	var iSpeedY = 0;
+	var lastX = 0;
+	var lastY = 0;
+	oBox.onmousedown = function(ev){
+		clearInterval(oBox.timer);
+		var disX = ev.pageX - y;
+		var disY = ev.pageY - x;
+		document.onmousemove = function(ev){
+			x = ev.pageY-disY;
+			y = ev.pageX-disX;
+			oBox.style.WebkitTransform = 'perspective(800px) rotateX('+-x/5+'deg) rotateY('+y/5+'deg)';
+			iSpeedX = ev.pageX-lastX;
+			iSpeedY = ev.pageY-lastY;
+			lastX = ev.pageX;
+			lastY = ev.pageY;
+		};
+		document.onmouseup = function(){
+			document.onmousemove = null;
+			document.onmouseup = null;
+			
+			oBox.timer = setInterval(function(){
+				iSpeedX*=0.95;
+				iSpeedY*=0.95;
+				x+=iSpeedY;
+				y+=iSpeedX;
+				oBox.style.WebkitTransform = 'perspective(800px) rotateX('+-x/5+'deg) rotateY('+y/5+'deg)';
+				if(Math.abs(iSpeedX)<1)iSpeedX=0;
+				if(Math.abs(iSpeedY)<1)iSpeedY=0;
+				
+				if(iSpeedX==0&&iSpeedY==0){
+					clearInterval(oBox.timer);
+				}
+				
+			},30);
+		};
+		return false;
+	};
+};
+</script>
+</head>
+
+<body>
+	<div class="box">
+		<div class="front">前</div>
+		<div class="back">后</div>
+		<div class="left">左</div>
+		<div class="right">右</div>
+		<div class="top">上</div>
+		<div class="bottom">下</div>
+	</div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
